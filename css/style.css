@@ -43,7 +43,11 @@
 		font-size: 32px !important;
 		line-height:42px !important ;
 		top: 35% !important;
-	    left: 35% !important;
+	    left: 45% !important;
+		width: 90vw !important;
+	}
+	.content__container__list{
+		width: 90vw !important;
 	}
 	.listitem{
 		display: inline !important;
@@ -1013,6 +1017,7 @@ label.error {
 }
 
 .brand {
+	padding-top:10px ;
 	z-index: 500;
 	left: 40px;
 	top: 55px;
