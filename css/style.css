@@ -2,13 +2,13 @@
 	margin: auto;
     position: relative;
     height: 304px;
-	width: 500px;
+	width: 30vw;
     overflow: hidden;
 	box-sizing: border-box;
 }
 .portfolio-img{
 	height: 304px;
-	width: 500px;
+	width: 30vw;
 }
 
 .portfolio-img, .reveal {
@@ -454,8 +454,8 @@
 
 .box{
 	position: relative;
-	height: 400px;
-	width: 500px;
+	height: 25vw;
+	width: 30vw;
 	margin: auto;
 	top: 50px;
 	text-align: center;
@@ -463,28 +463,28 @@
 
 .box2{
 	position: relative;
-	height: 400px;
-	width: 300px;
+	height: 25vw;
+	width: 20vw;
 	margin: auto;
-	top: 120px;
+	bottom: -8vw;
 	text-align: center;
 }
 
 .box3{
 	position: relative;
-	height: 266px;
-	width: 266px;
+	height: 18vw;
+	width: 18vw;
 	margin: 50px 100px;
-	top: 120px;
+	bottom: -10vw;
 	text-align: center;
 }
 
 .div-s{
 	display: inline-block;
-	margin:40px;
+	margin:4vw;
 }.center{
 	margin: auto ;
-	padding-top: 200px;
+	padding-top: 10vw;
 }
 /* ------------------------------------------------------------------------------
 
