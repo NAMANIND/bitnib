@@ -6,9 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,height=device-height , initial-scale=1.0">
   <!-- CSS -->
-  <link href="css/bootstrap.css" rel="stylesheet">
+  <!-- <link href="css/bootstrap.css" rel="stylesheet"> -->
 
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
   <!-- Main CSS -->
   <link href="css/style.css" rel="stylesheet">
 
@@ -18,7 +18,7 @@
 
 <body>
   <div class="container-fluid">
-    <nav class="navbar navbar-expand-lg  ">
+    <nav class="navbar navbar-expand-lg " id="sha">
       <div class="brand">
         <a href="#About" class="brand-name">Bit<span class="brand-name-s">nib</span></a>
         <ul class="navbar-nav" id="hide">
@@ -36,6 +36,8 @@
           </li>
         </ul>
       </div>
+
+
       <button class="nav-toggle-btn a-nav-toggle">
         <span class="hamburger">
           <span class="top-bun"></span>
@@ -48,7 +50,7 @@
 
       <div class="menu">
         <div class="menu-lang">
-          <a href="#" class="menu-lang-item active">Eng.</a>
+          <!-- <a href="#" class="menu-lang-item active">Eng.</a> -->
         </div>
 
         <div class="menu-main" id="accordion">
@@ -65,19 +67,21 @@
           </ul>
         </div>
     </nav>
+    <div onclick="topfunction()" id="scroll-top" class=" js-page-scroll-top"><img src="https://lollypop.design/wp-content/themes/lollypop/img/pg-scroll.svg" class="lazyloaded" data-ll-status="loaded"><noscript><img src="https://lollypop.design/wp-content/themes/lollypop/img/pg-scroll.svg"></noscript></div>
     <div class="row">
+      <div class="col-l c1"></div>
       <div class="colb c1">
-        <h1 class="text1">We are research driven design agency creating</h1>
-        <div class="content">
+        <h1 class="text1">We're a research driven design agency creating</h1>
+        <div class="content" id="content">
           <div class="content__container">
             <ul class="content__container__list">
-              <li class="content__container__list__item">- Top notch design solutions</li>
-              <li class="content__container__list__item">- Experiences that repeat users</li>
-              <li class="content__container__list__item">- User centered designs</li>
+              <li class="content__container__list__item">Top notch design solutions</li>
+              <li class="content__container__list__item">Experiences that repeat users</li>
+              <li class="content__container__list__item">User centered designs</li>
             </ul>
           </div>
         </div>
-        <div class="list">
+        <div class="list" id="list">
           <ul>
             <li class="listitem">30+ clients</li>
             <li class="listitem">3+ countries</li>
@@ -88,6 +92,7 @@
       <!-- <div class="colb c2"></div> -->
     </div>
     <div class="row">
+      <div class="col-l c3 height2"></div>
       <div class="colb c3  height2">
         <h1 class="text2">From idea to reality,<br>we take care of every <strong>bit.</strong></h1>
         <h3 class="text3">We are a UI/UX design agency providing strategic design solutions to bring your ideas to real
@@ -126,6 +131,7 @@
       </div>
     </div>
     <div class="row ">
+      <div class="col-l c1"></div>
       <div class="colb c1">
         <h1 class="text2">Our Recent Projects</h1>
         <div class="div-t">
@@ -158,18 +164,25 @@
 
 
     <div class="row">
+      <div class="col-l c2"></div>
       <div class="colb c2">
         <h1 class="text2">Our Clients</h1>
         <h3 class="text3">Our diverse work portfolio of clients ranges from startups to SMBs to well-known brands.
           We’ve built solutions for...</h3>
-        <div class="div-t">
-          <div class="box2 c3"></div>
-          <div class="box2 c3"></div>
-          <div class="box2 c3"></div>
-        </div>
+          <div class="center">
+            <div class="div-s">
+              <div class="box3 c3"></div>
+              <div class="box3 c3"></div>
+            </div>
+            <div class="div-s">
+              <div class="box3 c3"></div>
+              <div class="box3 c3"></div>
+            </div>
+          </div>
       </div>
     </div>
     <div class="row">
+      <div class="col-l c1 height3"></div>
       <div class="colb height3 c1">
         <h1 class="text5">We’ve worked for number of domains and industries</h1>
         <h3 class="text4">The insights and knowledge received from multiple domains and industries pushes us to thrive
@@ -186,6 +199,7 @@
         </div>
       </div>
     </div>
+    
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
     <script src="js/script.js"></script>
