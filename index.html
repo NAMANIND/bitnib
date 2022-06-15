@@ -8,7 +8,7 @@
   <!-- CSS -->
   <!-- <link href="css/bootstrap.css" rel="stylesheet"> -->
 
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <!-- Main CSS -->
   <link href="css/style.css" rel="stylesheet">
 
@@ -20,16 +20,22 @@
   <div class="container-fluid">
     <nav class="navbar navbar-expand-lg " id="sha">
       <div class="brand">
-        <a href="#About" class="brand-name">Bit<span class="brand-name-s">nib</span></a>
+        <a href="#About" class="brand-name" id="brand-name">Bit<span class="brand-name-s">nib</span></a>
         <ul class="navbar-nav" id="hide">
           <li class="nav-item active">
             <a class="nav-con hover-underline-animation" href="#">Services</a>
           </li>
           <li class="nav-item">
+            <a class="nav-con hover-underline-animation" href="#">Project</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-con hover-underline-animation" href="#">Client</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-con hover-underline-animation" href="#">Process</a>
           </li>
           <li class="nav-item">
-            <a class="nav-con hover-underline-animation" href="#">Portfolio</a>
+            <a class="nav-con hover-underline-animation" href="#">Industries</a>
           </li>
           <li class="nav-item">
             <a class="nav-con hover-underline-animation" href="#">Contact</a>
@@ -38,7 +44,7 @@
       </div>
 
 
-      <button class="nav-toggle-btn a-nav-toggle">
+      <button class="nav-toggle-btn a-nav-toggle" id="nav-toggle-btn">
         <span class="hamburger">
           <span class="top-bun"></span>
           <span class="meat"></span>
@@ -68,13 +74,13 @@
         </div>
     </nav>
     <div onclick="topfunction()" id="scroll-top" class=" js-page-scroll-top"><img
-        src="https://lollypop.design/wp-content/themes/lollypop/img/pg-scroll.svg" class="lazyloaded"
+        src="/images/pg-scroll.svg" class="lazyloaded"
         data-ll-status="loaded"><noscript><img
-          src="https://lollypop.design/wp-content/themes/lollypop/img/pg-scroll.svg"></noscript></div>
+          src="/images/pg-scroll.svg"></noscript></div>
     <div class="row">
       <div class="col-l c1"></div>
       <div class="colb c1">
-        <h1 class="text1">We're a research driven design agency creating</h1>
+        <h1 class="text1" style="letter-spacing: -3px;">We're a research driven design agency creating</h1>
         <div class="content" id="content">
           <div class="content__container">
             <ul class="content__container__list">
@@ -86,10 +92,10 @@
           </div>
         </div>
         <div class="list" id="list">
-          <ul>
-            <li class="listitem">30+<br>clients</li>
-            <li class="listitem">3+<br>countries</li>
-            <li class="listitem">10+<br>industries</li>
+          <ul style="text-align: left ;">
+            <li class="listitem"><strong>30+</strong><br>Clients</li>
+            <li class="listitem"><strong>3+</strong><br>Countries</li>
+            <li class="listitem"><strong>10+</strong><br>Industries</li>
           </ul>
         </div>
       </div>
@@ -145,7 +151,7 @@
                 <img class="portfolio-img lazyloaded" src="https://picsum.photos/seed/picsum/500/300"
                   alt="https://picsum.photos/seed/picsum/500/300" sizes="(max-width: 600px) 480px,
                       1076px"
-                  srcset="https://picsum.photos/seed/picsum/500/300 480w, https://picsum.photos/seed/picsum/500/300 1076w"
+                  srcset="https://picm.photos/seed/picsum/500/300 480w, https://picsum.photos/seed/picsum/500/300 1076w"
                   data-ll-status="loaded">
               </div>
             </div>
@@ -171,9 +177,34 @@
       <div class="col-l k3"></div>
       <div class="colb k3">
         <h1 class="text2">Our Clients</h1>
-        <h3 class="text3">Our diverse work portfolio of clients ranges from startups to SMBs to well-known brands.
+        <h3 class="text3" style="color: white; padding-top: 20px;">Our diverse work portfolio of clients ranges from startups to SMBs to well-known brands.
           We’ve built solutions for...</h3>
-          <div class="rowc"><div class="col-lg-3 col-6"><div class="brand-grid"><img src="/demo/react/abstrak/images/brand/brand-1.png" alt="Brand"></div></div><div class="col-lg-3 col-6"><div class="brand-grid"><img src="/demo/react/abstrak/images/brand/brand-2.png" alt="Brand"></div></div><div class="col-lg-3 col-6"><div class="brand-grid"><img src="/demo/react/abstrak/images/brand/brand-3.png" alt="Brand"></div></div><div class="col-lg-3 col-6"><div class="brand-grid"><img src="/demo/react/abstrak/images/brand/brand-4.png" alt="Brand"></div></div><div class="col-lg-3 col-6"><div class="brand-grid"><img src="/demo/react/abstrak/images/brand/brand-5.png" alt="Brand"></div></div><div class="col-lg-3 col-6"><div class="brand-grid"><img src="/demo/react/abstrak/images/brand/brand-6.png" alt="Brand"></div></div><div class="col-lg-3 col-6"><div class="brand-grid"><img src="/demo/react/abstrak/images/brand/brand-7.png" alt="Brand"></div></div><div class="col-lg-3 col-6"><div class="brand-grid"><img src="/demo/react/abstrak/images/brand/brand-8.png" alt="Brand"></div></div></div>
+        <div class="rowc">
+          <div class="col-lg-3 col-6">
+            <div class="brand-grid"><img src="images/brand-1.svg" alt="Brand"></div>
+          </div>
+          <div class="col-lg-3 col-6">
+            <div class="brand-grid"><img src="images/brand-2.png" alt="Brand"></div>
+          </div>
+          <div class="col-lg-3 col-6">
+            <div class="brand-grid"><img src="images/brand-3.png" alt="Brand"></div>
+          </div>
+          <div class="col-lg-3 col-6">
+            <div class="brand-grid"><img src="images/brand-4.png" alt="Brand"></div>
+          </div>
+          <div class="col-lg-3 col-6">
+            <div class="brand-grid"><img src="images/brand-5.png" alt="Brand"></div>
+          </div>
+          <div class="col-lg-3 col-6">
+            <div class="brand-grid"><img src="images/brand-6.png" alt="Brand"></div>
+          </div>
+          <div class="col-lg-3 col-6">
+            <div class="brand-grid"><img src="images/brand-7.png" alt="Brand"></div>
+          </div>
+          <div class="col-lg-3 col-6">
+            <div class="brand-grid"><img src="images/brand-8.png" alt="Brand"></div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -181,7 +212,7 @@
     <div class="row">
       <div class="col-l c2 heightp"></div>
       <div class="colb c2 heightp">
-        <h1 class="text2">Wierd to provide the best<br>for your buisness</h1>
+        <h1 class="text2" style="width: 650px;">Weird to provide the best for your buisness</h1>
         <div class="pro-card j">
           <div class="thumbnail">Research
             <p class="sp">he insights and knowledge received from multiple domains and industries pushes us to thrive
@@ -222,7 +253,8 @@
           <div class="div-s">
             <div class="boxp ">
               <div class="thumbnail">Research
-                <p class="sp">he insights and knowledge received from multiple domains and industries pushes us to thrive
+                <p class="sp">he insights and knowledge received from multiple domains and industries pushes us to
+                  thrive
                   for new challenges every day.</p>
               </div>
               <div class="contentp">
@@ -231,7 +263,8 @@
             </div>
             <div class="boxp">
               <div class="thumbnail">Design
-                <p class="sp">he insights and knowledge received from multiple domains and industries pushes us to thrive
+                <p class="sp">he insights and knowledge received from multiple domains and industries pushes us to
+                  thrive
                   for new challenges every day.</p>
               </div>
               <div class="contentp">
@@ -242,7 +275,8 @@
           <div class="div-s">
             <div class="boxp ">
               <div class="thumbnail">Development
-                <p class="sp">he insights and knowledge received from multiple domains and industries pushes us to thrive
+                <p class="sp">he insights and knowledge received from multiple domains and industries pushes us to
+                  thrive
                   for new challenges every day.</p>
               </div>
               <div class="contentp">
@@ -251,7 +285,8 @@
             </div>
             <div class="boxp ">
               <div class="thumbnail">launch
-                <p class="sp">he insights and knowledge received from multiple domains and industries pushes us to thrive
+                <p class="sp">he insights and knowledge received from multiple domains and industries pushes us to
+                  thrive
                   for new challenges every day.</p>
               </div>
               <div class="contentp">
@@ -318,7 +353,7 @@
       <div class="colb wid area">
         <div class="context">
           <h2>Let's Work Together</h2>
-          <h1>Need a successfull project?</h1>
+          <h1>Need a successful project?</h1>
           <button class="touch">Get in touch</button>
         </div>
 
