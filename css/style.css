@@ -11,50 +11,51 @@
 
 .rowc {
 	position: relative;
-	top: 30%;
-	left: 20%;
-    --bs-gutter-x: 1.5rem;
-    --bs-gutter-y: 0;
+	top: 40%;
+	height: 500px;
     display: flex;
+	left: 0;
     flex-wrap: wrap;
-    margin-top: calc(var(--bs-gutter-y)*-1);
-    margin-right: calc(var(--bs-gutter-x)*-0.5);
-    margin-left: calc(var(--bs-gutter-x)*-0.5);
-	transform: rotate(90deg) ;
+  
+	/* transform: rotate(90deg) ; */
 }
 
-.col-6{
-	transform: rotate(-90deg);
-}
+
 
 .rowc>[class*=col] {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
-@media (min-width: 992px){
-	.col-lg-3 {
-		flex: 0 0 auto;
-		width: 25%;
-	}
-	
-}
+
 .col-6 {
+	margin: auto;
 	flex: 0 0 auto;
-	width: 50%;
+	width: 25%;
 }
 
 .brand-grid {
-    padding: 10px 0;
+	margin: auto;
+    padding: 0 0;
+	width: 150px;
+	height: 150px;
+	
 }
 
 .brand-grid img {
+	
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
     opacity: .3;
     transition: all .3s ease-in-out;
-    transition: var(--transition);
+	cursor: pointer;
 }
+
+.brand-grid img:hover{
+	filter: grayscale(0%);
+	opacity: 1;
+}
+
 
 *, :after, :before {
     box-sizing: border-box;
@@ -117,7 +118,7 @@
 	text-align: left;
 	font-size: 24px;
     line-height: 1.4;
-	font-weight: bold;
+	font-weight: 800;
 	
 }
 .sp {
@@ -131,7 +132,7 @@
 
 .sp {
 	width: 150px;
-	font-weight: normal !important;
+	font-weight: 400;
 	font-size: 16px;
     line-height: 1.4;
     letter-spacing: -.025em;
@@ -231,6 +232,8 @@
 	text-align: center;
 	color: #fff;
 	font-size: 60px;
+	font-weight: 800;
+	letter-spacing: -3px;
 }
 
 .touch{
@@ -629,8 +632,20 @@
 
 
 @font-face {
-	font-family: "manrope";
-	src: url(../fonts/Manrope-VariableFont_wght.ttf);
+	font-family: "manrope-extrabold";
+	src: url(/fonts/Manrope-ExtraBold.ttf);
+	font-family: "manrope-bold";
+	src: url(/fonts/Manrope-Bold.ttf);
+	font-family: "manrope-semibold";
+	src: url(/fonts/Manrope-SemiBold.ttf);
+	font-family: "manrope-medium";
+	src: url(/fonts/Manrope-Medium.ttf);
+	font-family: "manrope-regular";
+	src: url(/fonts/Manrope-Regular.ttf);
+	font-family: "manrope-light";
+	src: url(/fonts/Manrope-Light.ttf);
+	font-family: "manrope-extralight";
+	src: url(/fonts/Manrope-ExtraLight.ttf);
 }
 
 
@@ -744,14 +759,15 @@ body {
 		width: 220px;
 		
 	}
+	.col-6{
+		width: 50%;
+	}
 	.rowc{
 		left: 6%;
 		top: 25% !important;
-	    transform: rotate(180deg) !important ;
+		height: auto;
+	    width: 350px;
 
-	}
-	.col-6{
-		transform: rotate(180deg) !important;
 	}
 	.k3{
 		height: 160vh !important;
@@ -762,6 +778,7 @@ body {
 	.context h1{
 		font-size: 32px;
 		margin-right: 50px;
+		letter-spacing: -1px !important;
 	}
 	.container-fluid {
 		width: 100% !important;
@@ -778,7 +795,8 @@ body {
 		line-height: 38px !important;
 		top: 10% !important;
 		left: 40px !important;
-		width: 70% !important;
+		width: 250px !important;
+		letter-spacing: -1px !important;
 	}
 
 	.navbar {
@@ -792,6 +810,7 @@ body {
 		top: 35%;
 		left: 45% !important;
 		width: 90vw !important;
+		letter-spacing: -1px;
 	}
 
 	.content__container__list {
@@ -803,12 +822,13 @@ body {
 		padding: 15px !important;
 		font-size: 10px;
 		width: 100px;
+		
 	}
 
 	#list {
 		left: -20px !important;
 		top: 40%;
-
+		
 	}
 
 	.text2 {
@@ -817,12 +837,13 @@ body {
 		top: 4% !important;
 		left: 10% !important;
 		width: 80% !important;
+		letter-spacing: -1px !important;
 	}
 
 	.text3 {
 		font-size: 18px !important;
 		line-height: 28px !important;
-		top: 12% !important;
+		top: 10.5% !important;
 		left: 10% !important;
 		width: 80% !important;
 	}
@@ -830,21 +851,22 @@ body {
 	.heading1 {
 		font-size: 18px !important;
 		line-height: 28px !important;
-		top: 21% !important;
+		top: 320px !important;
 		left: 10% !important;
 		width: 80% !important;
+		letter-spacing: normal !important;
 	}
 
 	.para1 {
 		font-size: 16px !important;
 		line-height: 26px !important;
-		top: 25% !important;
+		top: 350px !important;
 		left: 10% !important;
 		width: 80% !important;
 	}
 
 	.design-list {
-		top: 31% !important;
+		top: 440px !important;
 		left: 15% !important;
 		width: 80% !important;
 	}
@@ -857,21 +879,22 @@ body {
 	.heading2 {
 		font-size: 18px !important;
 		line-height: 28px !important;
-		top: 49% !important;
+		top: 780px !important;
 		left: 10% !important;
 		width: 80% !important;
+		letter-spacing: normal !important;
 	}
 
 	.para2 {
 		font-size: 16px !important;
 		line-height: 26px !important;
-		top: 53% !important;
+		top: 810px !important;
 		left: 10% !important;
 		width: 80% !important;
 	}
 
 	.design-list2 {
-		bottom: 25% !important;
+		top: 1000px !important;
 		left: 15% !important;
 		width: 80% !important;
 	}
@@ -879,21 +902,22 @@ body {
 	.heading3 {
 		font-size: 18px !important;
 		line-height: 28px !important;
-		bottom: 21% !important;
+		top: 1200px !important;
 		left: 10% !important;
 		width: 80% !important;
+		letter-spacing: normal !important;
 	}
 
 	.para3 {
 		font-size: 16px !important;
 		line-height: 26px !important;
-		bottom: 13% !important;
+		top: 1230px !important;
 		left: 10% !important;
 		width: 80% !important;
 	}
 
 	.design-list3 {
-		bottom: 0% !important;
+		top: 1350px !important;
 		left: 15% !important;
 		width: 80% !important;
 	}
@@ -912,6 +936,7 @@ body {
 		top: 4% !important;
 		left: 10% !important;
 		width: 80% !important;
+		letter-spacing: -1px !important;
 	}
 
 	.div-t {
@@ -1053,9 +1078,9 @@ body {
 	font-family: 'manrope', sans-serif;
 	left: 70px;
 	top: 25%;
-	width: 60vw;
-	font-size: 64px;
-	line-height: 76px;
+	width: 55vw;
+	font-size: 65px;
+	line-height: 75px;
 	font-weight: 800;
 }
 
@@ -1067,32 +1092,33 @@ body {
 	top: 10%;
 	line-height: 60px;
 	font-size: 50px;
-	font-weight: 600;
+	font-weight: 800;
+	letter-spacing: -3px;
 
 }
 
 .text5 {
 	position: absolute;
 	font-family: 'manrope', sans-serif;
-	;
 	left: 70px;
 	top: 10%;
 	width: 50%;
 	line-height: 60px;
 	font-size: 50px;
-	font-weight: 600;
+	font-weight: 800;
+	letter-spacing: -3px;
 }
 
 .text3 {
 	position: absolute;
 	font-family: 'manrope', sans-serif;
 	left: 70px;
-	top: 22%;
+	top: 18.7%;
 	width: 50%;
 	font-size: 24px;
 	line-height: 36px;
 	font-weight: 400;
-	color: white;
+	color:#1f2044;
 }
 
 .text4 {
@@ -1104,69 +1130,72 @@ body {
 	font-size: 24px;
 	line-height: 36px;
 	font-weight: 400;
-	color: black;
+	color: #1f2044;
 }
 
 .heading1 {
 	position: absolute;
 	font-family: 'manrope', sans-serif;
 	left: 70px;
-	top: 30%;
+	top: 440px;
 	line-height: 38px;
 	font-size: 28px;
-	font-weight: 600;
+	font-weight: 800;
+	letter-spacing: -1.2px;
 }
 
 .para1 {
 	position: absolute;
 	font-family: 'manrope', sans-serif;
 	left: 70px;
-	top: 35%;
+	top: 490px;
 	line-height: 26px;
 	font-size: 16px;
-	font-weight: 600;
+	font-weight: 400;
 }
 
 .heading2 {
 	position: absolute;
 	font-family: 'manrope', sans-serif;
 	left: 70px;
-	bottom: 36%;
+	top: 840px;
 	line-height: 38px;
 	font-size: 28px;
-	font-weight: 600;
+	font-weight: 800;
+	letter-spacing: -1.2px;
 }
 
 .para2 {
 	position: absolute;
 	font-family: 'manrope', sans-serif;
 	left: 70px;
-	bottom: 30%;
+	top: 890px ;
 	width: 50%;
 	line-height: 26px;
 	font-size: 16px;
-	font-weight: 600;
+	font-weight: 400;
 }
 
 .heading3 {
 	position: absolute;
 	font-family: 'manrope', sans-serif;
 	left: 70px;
-	bottom: 14%;
+	top: 1100px;
 	line-height: 38px;
 	font-size: 28px;
-	font-weight: 600;
+	font-weight: 800;
+	letter-spacing: -1.2px;
 }
 
 .para3 {
 	position: absolute;
 	font-family: 'manrope', sans-serif;
 	left: 70px;
-	bottom: 9%;
+	top: 1150px;
 	width: 50%;
 	line-height: 26px;
 	font-size: 16px;
-	font-weight: 600;
+	font-weight: 400;
 }
 
 .content {
@@ -1178,7 +1207,9 @@ body {
 	width: 70vw;
 	overflow: hidden;
 	font-family: 'Manrope', sans-serif;
-	font-size: 64px;
+	font-size: 65px;
+	font-weight: 800;
+	letter-spacing: -3px;
 	color: rgb(234, 143, 125);
 	/* background-color: #0087ca; */
 }
@@ -1240,6 +1271,9 @@ body {
 	overflow: hidden;
 	left: 0px;
 }
+strong{
+	font-weight: bolder;
+}
 
 .listitem {
 	float: left;
@@ -1247,7 +1281,7 @@ body {
 	font-weight: 600;
 	font-size: 18px;
 	display: block;
-	text-align: center;
+	text-align: left;
 	padding: 40px;
 	text-decoration: none;
 }
@@ -1256,7 +1290,7 @@ body {
 	text-align: left;
 	padding-bottom: 20px;
 	font-style: normal;
-	font-weight: 600;
+	font-weight: 400;
 	font-size: 16px;
 	line-height: 26px;
 
@@ -1265,7 +1299,7 @@ body {
 .design-list {
 	align-items: center;
 	position: absolute;
-	top: 35%;
+	top: 500px;
 	margin: 0;
 	padding: 0;
 	left: 70%;
@@ -1276,7 +1310,7 @@ body {
 .design-list2 {
 	align-items: center;
 	position: absolute;
-	bottom: 25%;
+	top: 900px;
 	margin: 0;
 	padding: 0;
 	left: 70%;
@@ -1285,7 +1319,7 @@ body {
 .design-list3 {
 	align-items: center;
 	position: absolute;
-	bottom: 0%;
+	top: 1160px;
 	margin: 0;
 	padding: 0;
 	left: 70%;
@@ -2021,7 +2055,6 @@ img {
 	width: 100%;
 	height: 99px;
 	background-color: #ffffff;
-	color: #2e2e2e;
 	z-index: 600;
 	position: fixed;
 }
@@ -2053,9 +2086,15 @@ nav {
 
 .navbar-nav {
 	position: fixed;
-	right: 8rem;
+	right: 22rem;
 	display: inline-flex;
 	padding-top: 10px;
+	transition: 0.3s ease-in-out;
+
+}
+
+.ani1{
+		right: 8rem !important;
 }
 
 
@@ -2073,11 +2112,10 @@ nav {
 	color: #1f2044 !important;
 	text-decoration: none;
 	font-size: 16px;
-	letter-spacing: -.06em;
 
 	text-decoration: none !important;
 	font-family: 'manrope', sans-serif;
-	font-weight: 600;
+	font-weight: 500;
 }
 
 .nav-con:hover {
@@ -2386,20 +2424,23 @@ label.error {
 .brand-name {
 	position: relative;
 	top: 16px;
+	font-weight: 400;
 	left: 205px;
 	color: #1f2044;
 	text-decoration: none;
 	font-size: 24px;
-	letter-spacing: -.06em;
+	transition: 0.3s ease-in-out;
 }
+
+
 
 .brand-name:hover {
 	text-decoration: none;
-	color: #234969;
+	color: #1f2044;
 }
 
 .brand-name-s {
-	font-weight: 700;
+	font-weight: 800;
 	color: #1f2044;
 }
 
@@ -2439,7 +2480,14 @@ label.error {
 
 @media (min-width: 1400px) {
 	.nav-toggle-btn {
-		right: 4.375rem;
+		right: 18.375rem;
+		transition: 0.3s ease-in-out;
+	}
+	.ani2{
+		right: 4.375rem !important;
+	}
+	.ani3{
+		left: 30px !important;
 	}
 }
 
