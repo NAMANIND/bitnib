@@ -8,10 +8,27 @@ const remo = document.getElementById("hide1");
 
 
 
-window.addEventListener('resize',function(){
-    "use strict";
-    window.location.reload();
-})
+document.querySelector(function () {
+    var width = document.querySelector(window).width();
+    var screen = "";
+    if (width < 1024 && width > 640) {
+        screen = "small";
+    } else if (width > 1024) { screen = "big"; }
+    document.querySelector(window).onresize(function () {
+        var cur_width = document.querySelector(window).width();
+
+        if (cur_width < 1024 && cur_width > 640 && screen == "big") {
+            location.reload();
+            remo.add();
+        } else if (cur_width > 1024 && screen == "small") {
+            location.reload();
+            remo.remove();
+        }
+       
+    })
+});
+
+
 
 
  window.onscroll = function scrollfun() {
