@@ -8,22 +8,10 @@ const remo = document.getElementById("hide1");
 
 
 
-
-var width = window.innerWidth;
-
-window.onresize = function() {
-  
-window.setTimeout(function () {
-        location.reload();
-    },100);
-}
-
-// window.onscroll = function() {
-//     if(w <=800){
-//         remo.remove();
-//     }
-// }
-
+window.addEventListener('resize',function(){
+    "use strict";
+    window.location.reload();
+})
 
 
  window.onscroll = function scrollfun() {
