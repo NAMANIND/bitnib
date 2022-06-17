@@ -1,3 +1,16 @@
+
+
+.heightk{
+	height: 50vh !important;
+}
+
+#hide1{
+	display: block;
+}
+
+
+
+
 .k3{
 	background-color: #27272e;
 	color: #c75c6f;
@@ -719,7 +732,12 @@ body {
 }
 
 
+
+
 @media screen and (max-width:767px) {
+	#hide1{
+		display: none!important;
+	}
 	.j{
 		display: none !important;
 	}
@@ -1125,7 +1143,7 @@ body {
 	position: absolute;
 	font-family: 'manrope', sans-serif;
 	left: 70px;
-	top: 30%;
+	top: 50%;
 	width: 50%;
 	font-size: 24px;
 	line-height: 36px;
@@ -1928,6 +1946,11 @@ h1 {
 	#hide {
 		display: none;
 	}
+
+	#hide1 {
+		display: none !important;
+	}
+
 }
 
 
@@ -2080,7 +2103,7 @@ nav {
 
 .nav-link {
 	font-size: 1.2rem;
-	font-family: 'Montserrat';
+	font-family: 'manrope';
 	font-weight: lighter;
 }
 
@@ -2101,6 +2124,9 @@ nav {
 @media (max-width: 900px) {
 	#hide {
 		display: none;
+	}
+	#hide1 {
+		display: none !important;
 	}
 
 	.navbar {
@@ -2130,8 +2156,6 @@ nav {
 .hover-underline-animation {
 	display: inline-block;
 	position: relative;
-	color:
-		#0087ca;
 }
 
 .hover-underline-animation:after {
@@ -2149,7 +2173,7 @@ nav {
 }
 
 .hover-underline-animation:hover:after {
-	transform: scaleX(1);
+	transform: scaleX(1.001);
 	transform-origin: bottom left;
 }
 
@@ -2589,7 +2613,7 @@ html:not(.body-menu-opened) .hamburger:hover .bottom-bun {
 	bottom: 0;
 	z-index: 990;
 	background: #ffffff;
-	max-width: 100%;
+	/* max-width: 100%; */
 	width: 100%;
 	padding: 4.25rem 4.375rem 4.1875rem;
 	display: flex;
@@ -2619,9 +2643,9 @@ html:not(.body-menu-opened) .hamburger:hover .bottom-bun {
 }
 
 @media (min-width: 576px) {
-	.menu {
+	/* .menu {
 		width: 34rem;
-	}
+	} */
 }
 
 .menu .menu-lang,

@@ -4,6 +4,27 @@ const dow = document.getElementById("sha");
 const ani1 = document.getElementById("hide");
 const ani2 = document.getElementById("nav-toggle-btn");
 const ani3 = document.getElementById("brand-name");
+const remo = document.getElementById("hide1");
+
+
+
+
+var width = window.innerWidth;
+
+window.onresize = function() {
+  
+window.setTimeout(function () {
+        location.reload();
+    },100);
+}
+
+// window.onscroll = function() {
+//     if(w <=800){
+//         remo.remove();
+//     }
+// }
+
+
 
  window.onscroll = function scrollfun() {
     if(document.body.scrollTop >500 || document.documentElement.scrollTop >500){
@@ -62,40 +83,11 @@ var io = new IntersectionObserver(entries =>{
 })
 
 
-var bo = new IntersectionObserver(entries =>{
-    for(const entry of entries) 
-    if ((entry.isIntersecting)) {
-        document.getElementById("h-scroll2").classList.remove("fadeInleft");
-        document.getElementById("h-scroll2").classList.add("fadeInright");
-    }else{
-        document.getElementById("h-scroll2").classList.remove("fadeInright");
-        document.getElementById("h-scroll2").classList.add("fadeInleft");
-        
-    }
-    // console.log(`$(entry.target.id) is in view: ${entry.isIntersecting}`);
-    // console.log(entries[0].intersectionRatio);
-})
 
-
-var co = new IntersectionObserver(entries =>{
-    for(const entry of entries) 
-    if ((entry.isIntersecting)) {
-        document.getElementById("h-scroll3").classList.remove("fadeInleft");
-        document.getElementById("h-scroll3").classList.add("fadeInright");
-    }else{
-        document.getElementById("h-scroll3").classList.remove("fadeInright");
-        document.getElementById("h-scroll3").classList.add("fadeInleft");
-        
-    }
-    // console.log(`$(entry.target.id) is in view: ${entry.isIntersecting}`);
-    // console.log(entries[0].intersectionRatio);
-})
 
 io.observe(document.querySelector("#anchor1"));
 
-bo.observe(document.querySelector("#anchor2"));
 
-co.observe(document.querySelector("#anchor3"));
 
 
 
