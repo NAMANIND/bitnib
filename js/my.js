@@ -60,20 +60,20 @@ const navi = document.querySelectorAll("nav-con");
 
 
 
-    window.onresize=function () {
-        var width = window.innerWidth;
+//     window.onresize=function () {
+//         var width = window.innerWidth;
 
-        if (width >1024 )  {
-            location.reload();
-            remo2.remove();
+//         if (width >1024 )  {
+//             location.reload();
+//             remo2.remove();
          
-        } else if (width  < 767) {
-            location.reload();
-            remo.remove();
+//         } else if (width  < 767) {
+//             location.reload();
+//             remo.remove();
 
-        }
+//         }
        
-    };
+//     };
 
 
 
