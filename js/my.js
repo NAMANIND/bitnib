@@ -60,20 +60,20 @@ const navi = document.querySelectorAll("nav-con");
 
 
 
-//     window.onresize=function () {
-//         var width = window.innerWidth;
+    // window.onresize=function () {
+    //     var width = window.innerWidth;
 
-//         if (width >1024 )  {
-//             location.reload();
-//             remo2.remove();
+    //     if (width >1024 )  {
+    //         location.reload();
+    //         remo2.remove();
          
-//         } else if (width  < 767) {
-//             location.reload();
-//             remo.remove();
+    //     } else if (width  < 767) {
+    //         location.reload();
+    //         remo.remove();
 
-//         }
+    //     }
        
-//     };
+    // };
 
 
 
@@ -104,20 +104,20 @@ window.onscroll = function scrollfun() {
     // var io = new IntersectionObserver(entries => {
     //     for (const entry of entries){
     //         if (window.innerWidth > 1024)  {
-    //             if ((entries[0].intersectionRatio>0.86)) {
-    //                 document.getElementById("sha").style.backgroundColor = "#27272e";
+    //             if ((entry.isIntersecting)||(entries[0].intersectionRatio>0.98)) {
+    //                 document.getElementById("sha").style.backgroundColor = "rgba(29,29,31,0.72)";
     //                 dow.classList.remove("sha-dow");
                     
                 
             
-    //             } else if((!entry.isIntersecting) || (entries[0].intersectionRatio<0.8)) {
+    //             } else if((!entry.isIntersecting)||(entries[0].intersectionRatio<0.8)) {
     //                 dow.classList.add("sha-dow");
     //                 document.getElementById("sha").style.backgroundColor = "#ffffff";
     //             }
              
     //         } else if (window.innerWidth < 700) {
     //             if ((entries[0].intersectionRatio>0.6)) {
-    //                 document.getElementById("sha").style.backgroundColor = "#27272e";
+    //                 document.getElementById("sha").style.backgroundColor = "rgba(29,29,31,0.72)";
     //                 dow.classList.remove("sha-dow");
     //             } else if((!entry.isIntersecting) || (entries[0].intersectionRatio<0.8)) {
     //                 dow.classList.add("sha-dow");
@@ -132,6 +132,7 @@ window.onscroll = function scrollfun() {
     //     // console.log(entries[0].intersectionRatio);
     // })
     // io.observe(document.querySelector("#anchor1"));
+    
 }
 
 

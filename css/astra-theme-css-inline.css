@@ -8,10 +8,6 @@
     color: #0572bb;
   }
 
-  a:hover,
-  a:focus {
-    color: #41ce8a;
-  }
 
   body,
   button,
@@ -132,10 +128,7 @@
     font-size: 2rem;
   }
 
-  ::selection {
-    background-color: var(--ast-global-color-0);
-    color: #ffffff;
-  }
+
 
   body,
   h1,
@@ -201,16 +194,7 @@
     color: #0572bb;
   }
 
-  .entry-meta a:hover,
-  .entry-meta a:hover *,
-  .entry-meta a:focus,
-  .entry-meta a:focus *,
-  .page-links>.page-link,
-  .page-links .page-link:hover,
-  .post-navigation a:hover {
-    color: #41ce8a;
-  }
-
+  
   #cat option,
   .secondary .calendar_wrap thead a,
   .secondary .calendar_wrap thead a:visited {
@@ -243,9 +227,7 @@
     color: #1e1f23;
   }
 
-  .single .ast-author-details .author-title {
-    color: #41ce8a;
-  }
+
 
   .ast-logo-title-inline .site-logo-img {
     padding-right: 1em;
@@ -260,8 +242,9 @@
   }
 
   .ast-page-builder-template .site-content>.ast-container {
-    max-width: 100%;
+    width: 84%;
     padding: 0;
+    margin-left: 15.5%;;
   }
 
   .ast-page-builder-template .site-content #primary {
@@ -553,8 +536,7 @@
   .wp-block-button.is-style-outline .wp-block-button__link:hover,
   .wp-block-button.is-style-outline .wp-block-button__link:focus {
     color: #000000 !important;
-    background-color: #41ce8a;
-    border-color: #41ce8a;
+    
   }
 
   .post-page-numbers.current .page-link,
@@ -645,8 +627,7 @@
   .wp-block-button .wp-block-button__link:hover,
   .wp-block-button .wp-block-button__link:focus {
     color: #000000;
-    background-color: #41ce8a;
-    border-color: #41ce8a;
+  
   }
 
   .wp-block-button .wp-block-button__link {
@@ -728,24 +709,7 @@
     line-height: 1;
   }
 
-  button:focus,
-  .menu-toggle:hover,
-  button:hover,
-  .ast-button:hover,
-  .ast-custom-button:hover .button:hover,
-  .ast-custom-button:hover,
-  input[type=reset]:hover,
-  input[type=reset]:focus,
-  input#submit:hover,
-  input#submit:focus,
-  input[type="button"]:hover,
-  input[type="button"]:focus,
-  input[type="submit"]:hover,
-  input[type="submit"]:focus {
-    /* color: #000000;
-    background-color: #41ce8a;
-    border-color: #41ce8a; */
-  }
+  
 
   @media (min-width: 544px) {
     .ast-container {
