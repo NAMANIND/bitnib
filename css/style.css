@@ -1209,8 +1209,9 @@ body {
 .para1 {
 	position: absolute;
 	font-family: 'manrope', sans-serif;
-	left: 70px;
+	right: 650px;
 	top: 490px;
+	width: 300px;
 	line-height: 26px;
 	font-size: 16px;
 	font-weight: 400;
@@ -1230,9 +1231,9 @@ body {
 .para2 {
 	position: absolute;
 	font-family: 'manrope', sans-serif;
-	left: 70px;
+	right: 650px;
 	top: 890px ;
-	width: 50%;
+	width: 300px;
 	line-height: 26px;
 	font-size: 16px;
 	font-weight: 400;
@@ -1242,7 +1243,7 @@ body {
 	position: absolute;
 	font-family: 'manrope', sans-serif;
 	left: 70px;
-	top: 1100px;
+	top: 1250px;
 	line-height: 38px;
 	font-size: 28px;
 	font-weight: 800;
@@ -1252,9 +1253,9 @@ body {
 .para3 {
 	position: absolute;
 	font-family: 'manrope', sans-serif;
-	left: 70px;
-	top: 1150px;
-	width: 50%;
+	right: 650px;
+	top: 1300px;
+	width: 300px;
 	line-height: 26px;
 	font-size: 16px;
 	font-weight: 400;
@@ -1365,7 +1366,7 @@ strong{
 	top: 500px;
 	margin: 0;
 	padding: 0;
-	left: 70%;
+	left: 65%;
 }
 
 
@@ -1376,16 +1377,16 @@ strong{
 	top: 900px;
 	margin: 0;
 	padding: 0;
-	left: 70%;
+	left: 65%;
 }
 
 .design-list3 {
 	align-items: center;
 	position: absolute;
-	top: 1160px;
+	top: 1310px;
 	margin: 0;
 	padding: 0;
-	left: 70%;
+	left: 65%;
 }
 
 .div-t {
