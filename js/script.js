@@ -117,10 +117,10 @@
 	  Parallax
 	-------------------------------------------------------------------------------*/
 
-	if ( $('#a-parallax').length ) {
-		var scene = document.getElementById('a-parallax');
-		var parallax = new Parallax(scene);
-	}
+// 	if ( $('#a-parallax').length ) {
+// 		var scene = document.getElementById('a-parallax');
+// 		var parallax = new Parallax(scene);
+// 	}
 
 
 
