@@ -83,6 +83,10 @@ const navi = document.querySelectorAll("nav-con");
 // })
 
 
+if (1 ) {
+    var scene = document.getElementById('a-parallax');
+    var parallax = new Parallax(scene);
+}
 
 
 window.onscroll = function scrollfun() {
@@ -92,12 +96,14 @@ window.onscroll = function scrollfun() {
         ani1.classList.add("ani1");
         ani2.classList.add("ani2");
         ani3.classList.add("ani3");
+        dow.style.backgroundColor = "rgba(255,255,255,0.72)"
     } else {
         mybutton.style.opacity = "0";
         dow.classList.remove("sha-dow");
         ani1.classList.remove("ani1");
         ani2.classList.remove("ani2");
         ani3.classList.remove("ani3");
+         dow.style.backgroundColor = "#fff8fa"
 
     }
   

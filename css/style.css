@@ -1,3 +1,14 @@
+#para{
+	width: 70%;
+	height: 400px;
+	position: absolute;
+	bottom: 0px;
+
+}
+
+.heightpara{
+	height: 130vh !important;
+}
 .container {
 	position : relative;
 	width : 90%;
@@ -5,7 +16,7 @@
 	align-items : center;
 	justify-content : center;
 	flex-wrap:wrap;
-	margin-left: 30px;
+	margin-left: -70px;
   }
   
   .container .card {
@@ -19,12 +30,12 @@
 	
 	display : flex;
 	flex-direction : column;
-	box-shadow : 0 5px 20px rgb(196 196 196);
+	/* box-shadow : 0 5px 20px rgb(196 196 196); */
 	transition : 0.3s ease-in-out;
 	border-radius : 15px;
   }
   .container .card:hover {
-	height : 350px;    
+	height : 380px;    
   }
   
   
@@ -42,11 +53,18 @@
   .container .card h3{
 	text-align: center;
 	margin-top: 0px;
+    font-family: 'manrope', sans-serif;
+    line-height: 38px;
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: -1.2px;
   }
   
   .container .card .image img {
 	max-width : 100%;
 	border-radius : 15px;
+	width: 260px;
+	
   }
   
   .container .card .content {
@@ -237,8 +255,8 @@
 }
 
 .j{
-    border: 1px solid;
-	   background: linear-gradient(180deg,#f8f8f8,hsla(0,0%,100%,0));
+    /* border: 5px solid; */
+	   background: linear-gradient(180deg,#f1f1f1 ,hsla(0,0%,100%,0));
 	border-image-source: linear-gradient(90deg,#ecf2f6,rgba(236,242,246,0) 70.31%);
 }
 
@@ -474,17 +492,18 @@
 		transform: translateY(-1000px) rotate(720deg);
 		opacity: 0;
 		border-radius: 50%;
+	
 	}
 }
 
 
 
 .c10{
-	background: linear-gradient( #fff8fa 0%, #e6f1ff 100%);
+	background: linear-gradient( #fff8fa 10%, #e6f1ff 100%);
 }
 
 .c20{
-	background: linear-gradient(rgb(230, 249, 255) 0%,#ffffff 100%);
+	background: linear-gradient(#e6f1ff 5%,#ffffff 100%);
 }
 
 
@@ -1139,7 +1158,7 @@ body {
 	position: absolute;
 	font-family: 'manrope', sans-serif;
 	left: 70px;
-	top: 25%;
+	top: 18%;
 	width: 55vw;
 	font-size: 65px;
 	line-height: 75px;
@@ -1205,12 +1224,19 @@ body {
 	font-weight: 800;
 	letter-spacing: -1.2px;
 }
+.himg1{
+	position: absolute;
+	left: 40px;
+	top: 500px;
+	width: 250px ;
+	height: 250px; 
+}
 
 .para1 {
 	position: absolute;
 	font-family: 'manrope', sans-serif;
 	right: 650px;
-	top: 490px;
+	top: 450px;
 	width: 300px;
 	line-height: 26px;
 	font-size: 16px;
@@ -1227,12 +1253,19 @@ body {
 	font-weight: 800;
 	letter-spacing: -1.2px;
 }
+.himg2{
+	position: absolute;
+	left: 40px;
+	top: 900px;
+	width: 250px ;
+	height: 250px; 
+}
 
 .para2 {
 	position: absolute;
 	font-family: 'manrope', sans-serif;
 	right: 650px;
-	top: 890px ;
+	top: 850px ;
 	width: 300px;
 	line-height: 26px;
 	font-size: 16px;
@@ -1249,12 +1282,19 @@ body {
 	font-weight: 800;
 	letter-spacing: -1.2px;
 }
+.himg3{
+	position: absolute;
+	left: 40px;
+	top: 1310px;
+	width: 250px ;
+	height: 250px; 
+}
 
 .para3 {
 	position: absolute;
 	font-family: 'manrope', sans-serif;
 	right: 650px;
-	top: 1300px;
+	top: 1260px;
 	width: 300px;
 	line-height: 26px;
 	font-size: 16px;
@@ -1263,7 +1303,7 @@ body {
 
 .contentr{
 	position: relative;
-	top: 58%;
+	top: 44%;
 	left: 37vw;
 	transform: translate(-50%, -50%);
 	height: 90px;
@@ -1328,7 +1368,7 @@ body {
 .list {
 
 	position: absolute;
-	top: 62%;
+	top: 46%;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -1363,7 +1403,7 @@ strong{
 .design-list {
 	align-items: center;
 	position: absolute;
-	top: 500px;
+	top: 460px;
 	margin: 0;
 	padding: 0;
 	left: 65%;
@@ -1374,7 +1414,7 @@ strong{
 .design-list2 {
 	align-items: center;
 	position: absolute;
-	top: 900px;
+	top: 860px;
 	margin: 0;
 	padding: 0;
 	left: 65%;
@@ -1383,7 +1423,7 @@ strong{
 .design-list3 {
 	align-items: center;
 	position: absolute;
-	top: 1310px;
+	top: 1260px;
 	margin: 0;
 	padding: 0;
 	left: 65%;
@@ -1403,7 +1443,7 @@ strong{
 	top: 50px;
 	height: 25vw;
 	width: 33vw;
-	left: -80px;
+	left: -180px;
 	margin-left: 80px;
 	display: inline-block;
 	text-align: center;
@@ -3057,7 +3097,7 @@ html:not(.body-menu-opened) .hamburger:hover .bottom-bun {
 }
 
 .shape1>.inside {
-	background-image: url("../img/shape-1.png");
+	background-image: url("../images/triangle-01.png");
 	padding-bottom: 106.02409639%;
 }
 
@@ -3068,7 +3108,7 @@ html:not(.body-menu-opened) .hamburger:hover .bottom-bun {
 }
 
 .shape1-intro>.inside {
-	background-image: url("../img/shape1-intro.png");
+	background-image: url("../images/shape1-intro.png");
 	padding-bottom: 104.11764706%;
 }
 
@@ -3079,7 +3119,7 @@ html:not(.body-menu-opened) .hamburger:hover .bottom-bun {
 }
 
 .shape2>.inside {
-	background-image: url("../img/shape-2.png");
+	background-image:url("../images/square-01.png");
 	padding-bottom: 99.21875%;
 }
 
@@ -3090,7 +3130,7 @@ html:not(.body-menu-opened) .hamburger:hover .bottom-bun {
 }
 
 .shape3>.inside {
-	background-image: url("../img/shape-3.png");
+	background-image:  url("../images/triangle-01.png");
 	padding-bottom: 112.5%;
 }
 
@@ -3101,7 +3141,7 @@ html:not(.body-menu-opened) .hamburger:hover .bottom-bun {
 }
 
 .shape3-intro>.inside {
-	background-image: url("../img/shape3-intro.png");
+	background-image: url("../images/shape3-intro.png");
 	padding-bottom: 115.78947368%;
 }
 
@@ -3112,7 +3152,7 @@ html:not(.body-menu-opened) .hamburger:hover .bottom-bun {
 }
 
 .shape4>.inside {
-	background-image: url("../img/shape-4.png");
+	background-image:url("../images/square-01.png");
 	padding-bottom: 90.16393443%;
 }
 
@@ -3123,7 +3163,7 @@ html:not(.body-menu-opened) .hamburger:hover .bottom-bun {
 }
 
 .shape4-intro>.inside {
-	background-image: url("../img/shape4-intro.png");
+	background-image: url("../images/shape4-intro.png");
 	padding-bottom: 91.80327869%;
 }
 
@@ -3134,7 +3174,7 @@ html:not(.body-menu-opened) .hamburger:hover .bottom-bun {
 }
 
 .shape5>.inside {
-	background-image: url("../img/shape-5.png");
+	background-image: url("../images/triangle-01.png");
 	padding-bottom: 115.38461538%;
 }
 
@@ -3145,7 +3185,7 @@ html:not(.body-menu-opened) .hamburger:hover .bottom-bun {
 }
 
 .shape5-intro>.inside {
-	background-image: url("../img/shape5-intro.png");
+	background-image: url("../images/shape5-intro.png");
 	padding-bottom: 112.38938053%;
 }
 
@@ -3156,7 +3196,7 @@ html:not(.body-menu-opened) .hamburger:hover .bottom-bun {
 }
 
 .shape6>.inside {
-	background-image: url("../img/shape-6.png");
+	background-image:url("../images/square-01.png");
 	padding-bottom: 87.33974359%;
 }
 
@@ -3167,7 +3207,7 @@ html:not(.body-menu-opened) .hamburger:hover .bottom-bun {
 }
 
 .shape7>.inside {
-	background-image: url("../img/shape-7.png");
+	background-image: url("../images/triangle-01.png");
 	padding-bottom: 98.08743169%;
 }
 
@@ -3178,7 +3218,7 @@ html:not(.body-menu-opened) .hamburger:hover .bottom-bun {
 }
 
 .shape7-intro>.inside {
-	background-image: url("../img/shape7-intro.png");
+	background-image: url("../images/shape7-intro.png");
 	padding-bottom: 98.28009828%;
 }
 
@@ -3189,7 +3229,7 @@ html:not(.body-menu-opened) .hamburger:hover .bottom-bun {
 }
 
 .shape8>.inside {
-	background-image: url("../img/shape-8.png");
+	background-image: url("../images/square-01.png");
 	padding-bottom: 100%;
 }
 
@@ -3200,7 +3240,7 @@ html:not(.body-menu-opened) .hamburger:hover .bottom-bun {
 }
 
 .shape9>.inside {
-	background-image: url("../img/shape-9.png");
+	background-image:  url("../images/triangle-01.png");
 	padding-bottom: 120%;
 }
 
@@ -3211,7 +3251,7 @@ html:not(.body-menu-opened) .hamburger:hover .bottom-bun {
 }
 
 .shape9-intro>.inside {
-	background-image: url("../img/shape9-intro.png");
+	background-image: url("../images/shape9-intro.png");
 	padding-bottom: 120%;
 }
 
@@ -3222,7 +3262,7 @@ html:not(.body-menu-opened) .hamburger:hover .bottom-bun {
 }
 
 .shape10>.inside {
-	background-image: url("../img/shape-10.png");
+	background-image:url("../images/square-01.png");
 	padding-bottom: 94.73684211%;
 }
 
@@ -3233,7 +3273,7 @@ html:not(.body-menu-opened) .hamburger:hover .bottom-bun {
 }
 
 .shape10-intro>.inside {
-	background-image: url("../img/shape10-intro.png");
+	background-image: url("../images/shape10-intro.png");
 	padding-bottom: 87.5%;
 }
 
@@ -3244,7 +3284,7 @@ html:not(.body-menu-opened) .hamburger:hover .bottom-bun {
 }
 
 .shape11>.inside {
-	background-image: url("../img/shape-11.png");
+	background-image:  url("../images/triangle-01.png");
 	padding-bottom: 89.47368421%;
 }
 
@@ -3255,7 +3295,7 @@ html:not(.body-menu-opened) .hamburger:hover .bottom-bun {
 }
 
 .shape11-intro>.inside {
-	background-image: url("../img/shape11-intro.png");
+	background-image: url("../images/shape11-intro.png");
 	padding-bottom: 83.33333333%;
 }
 
@@ -3266,7 +3306,7 @@ html:not(.body-menu-opened) .hamburger:hover .bottom-bun {
 }
 
 .shape12>.inside {
-	background-image: url("../img/shape-12.png");
+	background-image:url("../images/square-01.png");
 	padding-bottom: 107.14285714%;
 }
 
@@ -3277,7 +3317,7 @@ html:not(.body-menu-opened) .hamburger:hover .bottom-bun {
 }
 
 .shape12-intro>.inside {
-	background-image: url("../img/shape12-intro.png");
+	background-image: url("../images/shape12-intro.png");
 	padding-bottom: 107.14285714%;
 }
 
@@ -3288,7 +3328,7 @@ html:not(.body-menu-opened) .hamburger:hover .bottom-bun {
 }
 
 .shape13>.inside {
-	background-image: url("../img/shape-13.png");
+	background-image:  url("../images/triangle-01.png");
 	padding-bottom: 100%;
 }
 
@@ -3301,12 +3341,12 @@ html:not(.body-menu-opened) .hamburger:hover .bottom-bun {
 
 .shape14>.inside,
 .shape14-intro>.inside {
-	background-image: url("../img/shape-14.png");
+	background-image:url("../images/square-01.png");
 	padding-bottom: 114.285714289%;
 }
 
 .shape14-intro>.inside {
-	background-image: url("../img/shape14-intro.png");
+	background-image: url("../images/shape14-intro.png");
 }
 
 .shape15 {
@@ -3316,7 +3356,7 @@ html:not(.body-menu-opened) .hamburger:hover .bottom-bun {
 }
 
 .shape15>.inside {
-	background-image: url("../img/shape-15.png");
+	background-image: url("../images/triangle-01.png");
 	padding-bottom: 100%;
 }
 
@@ -3327,14 +3367,14 @@ html:not(.body-menu-opened) .hamburger:hover .bottom-bun {
 }
 
 .shape16>.inside {
-	background-image: url("../img/shape-16.png");
+	background-image: url("../images/square-01.png");
 	padding-bottom: 114.28571429%;
 }
 
 .slide-ornament {
 	display: block;
 	width: 31.875%;
-	background: url("../img/ornament.png") 0 0 no-repeat;
+	background: url("../images/ornament.png") 0 0 no-repeat;
 	background-size: 100%;
 	position: absolute;
 	left: 65.20833333%;
