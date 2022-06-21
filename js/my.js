@@ -83,9 +83,9 @@ const navi = document.querySelectorAll("nav-con");
 // })
 
 
-if (1 ) {
+if (1) {
     var scene = document.getElementById('a-parallax');
-    var parallax = new parallax(scene);
+    var parallax = new Parallax(scene);
 }
 
 
