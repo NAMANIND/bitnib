@@ -261,7 +261,8 @@
 }
 
 .j:hover{
-		background:#ecf2f6;
+	    background: linear-gradient(180deg,#f1f1f1 ,#d4e9f7);
+		/* background:#d4e9f7; */
 	
 		/* border-image-source: linear-gradient(90deg,#ffffff,rgba(70, 65, 65, 0.43)); */
 }
@@ -504,6 +505,7 @@
 
 .c20{
 	background: linear-gradient(#e6f1ff 5%,#ffffff 100%);
+	/* background: #1f2044; */
 }
 
 
@@ -1147,7 +1149,7 @@ body {
 }
 
 .height2 {
-	height: 220vh;
+	height: 205vh;
 }
 
 .height3 {
@@ -1170,7 +1172,7 @@ body {
 	position: absolute;
 	font-family: 'manrope', sans-serif;
 	left: 70px;
-	top: 10%;
+	top: 2%;
 	line-height: 60px;
 	font-size: 50px;
 	font-weight: 800;
@@ -1194,7 +1196,7 @@ body {
 	position: absolute;
 	font-family: 'manrope', sans-serif;
 	left: 70px;
-	top: 18.7%;
+	top: 12%;
 	width: 50%;
 	font-size: 24px;
 	line-height: 36px;
@@ -3192,7 +3194,7 @@ html:not(.body-menu-opened) .hamburger:hover .bottom-bun {
 .shape6 {
 	top: 52.1% !important;
 	left: 54.0625% !important;
-	width: 16.25%;
+	width: 6.25%;
 }
 
 .shape6>.inside {
@@ -3203,7 +3205,7 @@ html:not(.body-menu-opened) .hamburger:hover .bottom-bun {
 .shape7 {
 	top: 51.2% !important;
 	left: 56.51041667% !important;
-	width: 19.0625%;
+	width: 6.0625%;
 }
 
 .shape7>.inside {
