@@ -90,7 +90,7 @@ if (1) {
 
 
 window.onscroll = function scrollfun() {
-    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+    if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
         mybutton.style.opacity = "1";
         dow.classList.add("sha-dow");
         ani1.classList.add("ani1");

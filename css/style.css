@@ -1,3 +1,118 @@
+.ptext{
+	text-align: left;
+}
+
+.ptext h1{
+	margin-bottom: 0px;
+	margin-top: 10px;
+}
+
+.propos{
+	position: absolute;
+	bottom: 50px;
+	left: 70px;
+
+}
+
+.elementor-widget-container p{
+	font-family: 'manrope', sans-serif;
+    line-height: 26px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+
+.hover-underline-animation2 {
+	display: inline-block;
+	position: relative;
+	color: black;
+	padding-top: 40px;
+}
+.hover-underline-animation2:hover{
+	color: #0055ff;
+}
+
+.hover-underline-animation2:after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	transform: scaleX(0.25);
+	height: 1.5px;
+	bottom: 0;
+	left: 0;
+	background-color:#0055ff;
+	transform-origin: bottom left;
+	transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation2:hover:after {
+	transform: scaleX(1.001);
+	transform-origin: bottom left;
+}
+
+.prapper{
+    display: grid;
+    grid-template-columns: 25% 20% 45%;
+	position: relative;
+	top: 300px;
+	row-gap: 4rem;
+	height: fit-content;
+	left: 70px;
+}
+
+@media screen and (max-width:767px){
+	.prapper{
+		grid-template-columns: 100% !important;
+		row-gap: 0 !important;
+		left: 10% !important;
+		width: 80% !important;
+	}
+	.prapper div ul{
+		margin-left: 0px !important;
+		padding-left: 20px;
+	}
+	.height2{
+		height: 350vh !important;
+	}
+	
+	.prapper div h1{
+		font-size: 18px !important;
+		line-height: 28px !important;
+		letter-spacing: normal !important;
+	}
+	.prapper div p{
+		font-size: 16px !important;
+		line-height: 26px !important;
+	}
+}
+
+.prapper div img{
+    width: 250px ;
+	height: 250px;
+}
+
+.prapper div h1{
+	margin-top: 16px;
+	font-family: 'manrope', sans-serif;
+	line-height: 38px;
+	font-size: 28px;
+	font-weight: 800;
+	letter-spacing: -1.2px;
+}
+
+.prapper div p{
+	font-family: 'manrope', sans-serif;
+	line-height: 26px;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.prapper div ul{
+	margin-left: 80px;
+}
+
+
 #para{
 	width: 70%;
 	height: 400px;
@@ -16,7 +131,7 @@
 	align-items : center;
 	justify-content : center;
 	flex-wrap:wrap;
-	margin-left: -70px;
+	margin-left: -60px;
   }
   
   .container .card {
@@ -792,7 +907,7 @@ body {
 }
 
 .heightp{
-	height: 110vh !important;
+	height: 115vh !important;
 }
 
 
@@ -918,16 +1033,17 @@ body {
 	.text2 {
 		font-size: 28px !important;
 		line-height: 38px !important;
-		top: 4% !important;
+		top: 1% !important;
 		left: 10% !important;
 		width: 80% !important;
 		letter-spacing: -1px !important;
 	}
+	
 
 	.text3 {
 		font-size: 18px !important;
 		line-height: 28px !important;
-		top: 10.5% !important;
+		top: 6% !important;
 		left: 10% !important;
 		width: 80% !important;
 	}
@@ -1172,12 +1288,15 @@ body {
 	position: absolute;
 	font-family: 'manrope', sans-serif;
 	left: 70px;
-	top: 2%;
+	top: 12%;
 	line-height: 60px;
 	font-size: 50px;
 	font-weight: 800;
 	letter-spacing: -3px;
 
+}
+.cp{
+	top: 2%;
 }
 
 .text5 {
@@ -1443,9 +1562,9 @@ strong{
 .box {
 	position: relative;
 	top: 50px;
-	height: 25vw;
-	width: 33vw;
-	left: -180px;
+	height: 28vw;
+	width: 30vw;
+	left: -150px;
 	margin-left: 80px;
 	display: inline-block;
 	text-align: center;
@@ -2284,6 +2403,8 @@ nav {
 
 
 
+
+
 /* 1.2 Typography */
 
 .font-custom {
@@ -2549,7 +2670,7 @@ label.error {
 	position: relative;
 	top: 20px;
 	font-weight: 400;
-	left: 205px;
+	left: 185px;
 	color: #1f2044;
 	text-decoration: none;
 	font-size: 24px;
@@ -2735,8 +2856,9 @@ html:not(.body-menu-opened) .hamburger:hover .bottom-bun {
 	right: 0;
 	top: 0;
 	bottom: 100%;
-	background: rgba(0, 0, 0, .65);
+	background: #ffffff;
 	z-index: 980;
+	
 }
 
 .body-menu-opened .hide-menu {
