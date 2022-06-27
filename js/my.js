@@ -83,11 +83,7 @@ const remo2 = document.getElementById("hide2");
 // })
 
 
-if (1) {
-    var Parallax;
-    var scene = document.getElementById('a-parallax');
-    var parallax = new Parallax(scene);
-}
+
 
 
 var top1 = $('#Projects').offset().top;
@@ -266,7 +262,11 @@ function topfunction() {
 // }
 
 
-
+if (1) {
+    var Parallax;
+    var scene = document.getElementById('a-parallax');
+    var parallax = new Parallax(scene);
+}
 
 
 
