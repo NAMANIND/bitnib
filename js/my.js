@@ -263,7 +263,6 @@ function topfunction() {
 
 
 if (1) {
-    var Parallax;
     var scene = document.getElementById('a-parallax');
     var parallax = new Parallax(scene);
 }
