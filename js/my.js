@@ -96,7 +96,7 @@ const burg= document.getElementsByClassName("burg");
 $(document).scroll(function() {
 
     var scrollPos = $(document).scrollTop();
-    console.log((scrollPos >= top2 && scrollPos < top3));
+    
 
     
                     if ((scrollPos >= top2 && scrollPos < top3)) {
