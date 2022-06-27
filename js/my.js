@@ -6,7 +6,7 @@ const ani2 = document.getElementById("nav-toggle-btn");
 const ani3 = document.getElementById("brand-name");
 const remo = document.getElementById("hide1");
 const remo2 = document.getElementById("hide2");
-const navi = document.querySelectorAll("nav-con");
+
 
 // var cur_width = window.innerWidth;
 // if (cur_width > 1024 && cur_width > 640) {
@@ -84,51 +84,112 @@ const navi = document.querySelectorAll("nav-con");
 
 
 if (1) {
-      var Parallax;
+    var Parallax;
     var scene = document.getElementById('a-parallax');
     var parallax = new Parallax(scene);
 }
 
 
+var top1 = $('#Projects').offset().top;
+var top2 = $('#Clients').offset().top;
+var top3 = $('#Linkdin').offset().top;
+const navi = document.getElementsByClassName("nav-con");
+const burg= document.getElementsByClassName("burg");
+
+    
+$(document).scroll(function() {
+
+    var scrollPos = $(document).scrollTop();
+    console.log((scrollPos >= top2 && scrollPos < top3));
+
+    
+                    if ((scrollPos >= top2 && scrollPos < top3)) {
+                        document.getElementById("sha").style.backgroundColor = "rgba(29,29,31,0.9)";
+                        dow.classList.remove("sha-dow");
+                        document.getElementById("brimg").src="images/brand-0-b.svg";
+                        // navi.forEach(element => {
+                        //     console.log(element.classList);
+                        //     // element.classList.add("navi");
+                        // }); 
+
+                        for (let index = 0; index < navi.length; index++) {
+                            navi[index].classList.add("navi");
+                        }
+                       
+                        for (let index = 0; index < burg.length; index++) {
+                            burg[index].style.backgroundColor = "white";
+                        }
+                        
+                        
+                
+                    } else{
+                        dow.classList.add("sha-dow");
+                        document.getElementById("sha").style.backgroundColor = "rgba(255,255,255,0.72)";
+                        document.getElementById("brimg").src="images/brand-0.svg";
+                        for (let index = 0; index < navi.length; index++) {
+                            navi[index].classList.remove("navi");
+                        }
+                        for (let index = 0; index < burg.length; index++) {
+                            burg[index].style.backgroundColor = "black";
+                        }
+                    }
+                 
+    
+   
+});
+
 window.onscroll = function scrollfun() {
-    if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+
+    if(document.body.scrollTop > 100 || document.documentElement.scrollTop > 100){
+        // dow.style.backgroundColor = "rgba(255,255,255,0.72)";
+    }else{
+        dow.style.backgroundColor = "#fff8fa";
+    }
+
+
+    if (document.body.scrollTop > 750 || document.documentElement.scrollTop > 750) {
         mybutton.style.opacity = "1";
         dow.classList.add("sha-dow");
         ani1.classList.add("ani1");
         ani2.classList.add("ani2");
         ani3.classList.add("ani3");
-        dow.style.backgroundColor = "rgba(255,255,255,0.72)"
+    
     } else {
         mybutton.style.opacity = "0";
         dow.classList.remove("sha-dow");
         ani1.classList.remove("ani1");
         ani2.classList.remove("ani2");
         ani3.classList.remove("ani3");
-         dow.style.backgroundColor = "#fff8fa"
-
+     
     }
+
+
+
+ 
+
+
+
+
   
     // var io = new IntersectionObserver(entries => {
     //     for (const entry of entries){
     //         if (window.innerWidth > 1024)  {
-    //             if ((entry.isIntersecting)||(entries[0].intersectionRatio>0.98)) {
-    //                 document.getElementById("sha").style.backgroundColor = "rgba(29,29,31,0.72)";
+    //             if ((entry.isIntersecting)) {
+    //                 document.getElementById("sha").style.backgroundColor = "rgba(29,29,31,0.9)";
     //                 dow.classList.remove("sha-dow");
-                    
-                
             
-    //             } else if((!entry.isIntersecting)||(entries[0].intersectionRatio<0.8)) {
+    //             } else if((!entry.isIntersecting)) {
     //                 dow.classList.add("sha-dow");
-    //                 document.getElementById("sha").style.backgroundColor = "#ffffff";
+    //                 document.getElementById("sha").style.backgroundColor = "rgba(255,255,255,0.72)";
     //             }
              
     //         } else if (window.innerWidth < 700) {
     //             if ((entries[0].intersectionRatio>0.6)) {
-    //                 document.getElementById("sha").style.backgroundColor = "rgba(29,29,31,0.72)";
+    //                 document.getElementById("sha").style.backgroundColor = "rgba(29,29,31,0.9)";
     //                 dow.classList.remove("sha-dow");
     //             } else if((!entry.isIntersecting) || (entries[0].intersectionRatio<0.8)) {
     //                 dow.classList.add("sha-dow");
-    //                 document.getElementById("sha").style.backgroundColor = "#ffffff";
+    //                 document.getElementById("sha").style.backgroundColor = "rgba(255,255,255,0.72)";
     //             }
     
     //         }
@@ -138,10 +199,48 @@ window.onscroll = function scrollfun() {
     //     // console.log(`$(entry.target.id) is in view: ${entry.isIntersecting}`);
     //     // console.log(entries[0].intersectionRatio);
     // })
-    // io.observe(document.querySelector("#anchor1"));
+    // io.observe(document.querySelector("#Clients"));
     
 }
 
+
+
+
+// const scrollTopp = window.pageYOffset || document.documentElement.scrollTop; 
+    // var top1 = document.querySelector('#Projects').getBoundingClientRect()+scrollTopp;
+    // var top2 = document.querySelector('#Clients').getBoundingClientRect()+scrollTopp;
+    // var top3 = document.querySelector('#Linkdin').getBoundingClientRect()+scrollTopp;
+    
+    // document.querySelector(document).scroll(function() {
+    //   var scrollPos = document.querySelector(document).scrollTop;
+    //   if (scrollPos >= top1 && scrollPos < top2) {
+    //     dow.classList.add("sha-dow");
+    //     document.getElementById("sha").style.backgroundColor = "rgba(255,255,255,0.72)";
+    //   } else if (scrollPos >= top2 && scrollPos < top3) {
+    //     document.getElementById("sha").style.backgroundColor = "rgba(29,29,31,0.9)";
+    //     dow.classList.remove("sha-dow");
+    //   } else if (scrollPos >= top3) {
+    //     dow.classList.add("sha-dow");
+    //     document.getElementById("sha").style.backgroundColor = "rgba(255,255,255,0.72)";
+    //   }
+    // });
+
+
+ // if (scrollPos >= top1 && scrollPos < top2) {
+    //         dow.classList.add("sha-dow");
+    //         document.getElementById("sha").style.backgroundColor = "rgba(255,255,255,0.72)";
+    //       } else if (scrollPos >= top2 && scrollPos < top3) {
+    //         document.getElementById("sha").style.backgroundColor = "rgba(29,29,31,0.9)";
+    //         dow.classList.remove("sha-dow");
+    //       } else if (scrollPos >= top3) {
+    //         dow.classList.add("sha-dow");
+    //         document.getElementById("sha").style.backgroundColor = "rgba(255,255,255,0.72)";
+    //       }
+// (entries[0].intersectionRatio>0.8)
+
+// (entry.isIntersecting)||
+
+// ||(entries[0].intersectionRatio<0.8)
 
 function topfunction() {
     // document.body.scrollTop = 0,'smooth';
