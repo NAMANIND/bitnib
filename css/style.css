@@ -104,7 +104,62 @@
 	row-gap: 4rem;
 	height: fit-content;
 	left: 70px;
+
+	
+	
+
 }
+
+.footer{
+
+	width: 80%;
+	height: 10vh;
+    display: grid;
+    grid-template-columns: 30% 20% 20% 20%;
+	position: relative;
+	height: fit-content;
+	left: 12%;
+	margin-top: 100px;
+
+}
+
+.fot-t{
+	font-size: 24px;
+    line-height: 34px;
+    letter-spacing: normal!important;
+	font-weight: 400;
+	padding-left: 10px;
+	margin-top: -20px;
+}
+
+.d1{
+	border-right: 1px solid #0055ff;
+}
+
+.footer div{
+
+ margin:  0px auto;
+}
+
+.footer ul li{
+	font-size: 16px;
+    line-height: 26px;
+    letter-spacing: normal!important;
+	font-weight: 400;
+	
+}
+
+.footer ul{
+	list-style: none;
+}
+
+.text-capitalize{
+	font-weight: 800 !important;
+    text-transform: capitalize!important;
+	letter-spacing: -.5px!important;
+}
+
+
 
 @media screen and (max-width:767px){
 	.prapper{
@@ -140,6 +195,20 @@
 	margin-top: -20px;
     width: 220px ;
 	height: 220px;
+	will-change: transform;
+
+	transition: all 300ms cubic-bezier(0.03, 0.98, 0.52, 0.99);
+	
+	
+
+
+}
+
+.icon{
+	transition: all 300ms cubic-bezier(0.03, 0.98, 0.52, 0.99);
+}
+.conio{
+	transition: all 300ms cubic-bezier(0.03, 0.98, 0.52, 0.99);
 }
 
 .prapper div h1{
@@ -469,12 +538,12 @@
 
 .j{
     /* border: 5px solid; */
-	   background: linear-gradient(180deg,#f1f1f1 ,hsla(0,0%,100%,0));
+	   background: linear-gradient(180deg,#fff8fa ,hsla(0,0%,100%,0));
 	border-image-source: linear-gradient(90deg,#ecf2f6,rgba(236,242,246,0) 70.31%);
 }
 
 .j:hover{
-	    background: linear-gradient(180deg,#f1f1f1 ,#dbdbdb);
+	    background: linear-gradient(180deg,#fff8fa 100px ,#ffb3c3 100%);
 		/* background:#d4e9f7; */
 	
 		/* border-image-source: linear-gradient(90deg,#ffffff,rgba(70, 65, 65, 0.43)); */
@@ -530,14 +599,16 @@
 
 
 .context {
-	width: 100%;
+	width: 50%;
 	position: absolute;
 	top: 90px;
 	align-items: center;
 }
 
 .wid{
-	width: 100%!important;
+	width: 50%!important;
+	margin: auto;
+	box-shadow: 0 5px 50px 0 #dbdbdb;
 }
 .context h2 {
 	font-weight: bold;
@@ -557,9 +628,9 @@
 	padding:  20px 0;
 }
 
-.touch{
+.context .touch{
 	position: relative;
-	left: 43%;
+    top: -50px;
 	width: 200px;
 	font-size: 16px;
 	font-weight: bold;
@@ -582,20 +653,20 @@
 
 .area {
 	background: #4e54c8;
-	/* background:linear-gradient(to left, #8f94fb, #4e54c8); */
-	margin-right: 20px;
+	background:linear-gradient(0deg, #7baeff, #0055ff);
+	
 
-	width: 100%;
-	height: 100vh;
+	width: 50%;
+	height: 50vh;
 }
 
 .circles {
 	position: absolute;
 	top: 0;
-	left: 0;
-	margin-top: 0px;
-	width: 100%;
-	height: 100vh;
+	left: 25%;
+	margin:auto;
+	width: 50%;
+	height: 50vh;
 	overflow: hidden;
 }
 
@@ -830,13 +901,13 @@
 .k1 {
 	left: -5vw;
 	top: 83% !important;
-	background-color: #0087ca !important;
+	/* background-color: #0087ca !important; */
 }
 
 .k2 {
 	left: -15vw;
 	top: 125% !important;
-	background-color: darkgreen !important;
+	/* background-color: darkgreen !important; */
 }
 
 
@@ -851,15 +922,6 @@
 
 
 
-::-webkit-scrollbar {
-	width: 1px;
-	height: 1px;
-}
-
-::-webkit-scrollbar-button {
-	width: 1px;
-	height: 1px;
-}
 
 
 
@@ -1080,7 +1142,7 @@ body {
 		height: 160vh !important;
 	}
 	.touch{
-		left: 20% !important;
+		/* left: 20% !important; */
 	}
 	.context h1{
 		font-size: 32px;
@@ -1333,6 +1395,16 @@ body {
 	padding-right: 15px;
 	flex-grow: 1;
 	display: flex;
+}
+
+.wid-b {
+
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	background:linear-gradient(180deg, #ffffff, #7baeff);
+	
+	
 }
 
 
@@ -2384,32 +2456,41 @@ body {
 }
 
 ::selection {
-	background-color: #fcf1e7;
+	background-color: #7baeff;
 	color: #1f2044;
 	text-shadow: none;
 }
 
 -webkit-::selection {
-	background-color: #fcf1e7;
+	background-color:#7baeff;
 	color: #1f2044;
 	text-shadow: none;
 }
 
 ::-moz-selection {
-	background-color: #fcf1e7;
+	background-color: #7baeff;
 	color: #1f2044;
 	text-shadow: none;
 }
 
 ::-webkit-scrollbar {
-	width: 5px;
+	width: 10px;
 	height: 5px;
+
 }
 
 ::-webkit-scrollbar-thumb {
 	cursor: pointer;
 	background: #2e2e2e;
 }
+
+
+
+::-webkit-scrollbar-button {
+	width: 1px;
+	height: 1px;
+}
+
 
 img {
 	max-width: 100%;
