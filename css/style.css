@@ -394,7 +394,7 @@
 .rowc2 {
 	opacity: 0;
 	position: relative;
-    
+    top: -10px;
 	height: 500px;
     display: flex;
 	left: 0;
@@ -430,6 +430,8 @@
 }
 
 .brand-grid img {
+	width: 150px;
+
 	
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
@@ -1141,9 +1143,7 @@ body {
 	.k3{
 		height: 160vh !important;
 	}
-	.touch{
-		/* left: 20% !important; */
-	}
+
 	.context h1{
 		font-size: 32px;
 		letter-spacing: -1px !important;
