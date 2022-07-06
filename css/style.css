@@ -150,6 +150,7 @@
 }
 
 .footer ul{
+	padding-left: 10px;
 	list-style: none;
 }
 
@@ -162,6 +163,17 @@
 
 
 @media screen and (max-width:767px){
+	.footer{
+
+	
+		grid-template-columns: 100%;
+		
+	
+	}
+	.footer div{
+
+		margin:  0px ;
+	}
 	.prapper{
 		grid-template-columns: 100% !important;
 		row-gap: 0 !important;
@@ -608,7 +620,7 @@
 }
 
 .wid{
-	width: 50%!important;
+	width: 50%;
 	margin: auto;
 	box-shadow: 0 5px 50px 0 #dbdbdb;
 }
@@ -794,6 +806,7 @@
 	/* background: linear-gradient(#e6f1ff 5%,#ffffff 100%); */
 	background: linear-gradient( #e6f1ff 5px,#ffffff 200px);
 	/* background: #1f2044; */
+
 }
 
 
@@ -942,6 +955,7 @@
 		height: 32px;
 		bottom: 45px;
 	}
+
 }
 
 
@@ -1072,6 +1086,10 @@ body {
 
 .heightp{
 	height: 115vh !important;
+	background-image: url("/images/process-bg.jpg") ;
+	background-size: cover;
+	background-repeat: no-repeat;
+	
 }
 
 
@@ -1367,7 +1385,27 @@ body {
 	.navbar {
 		height: 50px !important;
 	}
-}
+	.wid-b {
+		height: 130vh !important;
+	}
+	.footer{
+		
+		padding-bottom: 0px;
+
+	}
+	.context{
+		width: 80% !important;
+	}
+	.wid{
+		width: 80% !important;
+	}
+	.area{
+		width: 80% !important;
+	}
+	iframe{
+		width: 80% !important;
+	}
+}	
 
 .height40{
 	height: 90vh !important;
@@ -1456,6 +1494,7 @@ body {
 
 .height2 {
 	height: 180vh;
+
 }
 
 .height3 {
@@ -1623,7 +1662,7 @@ body {
 	top: 44%;
 	left: 37vw;
 	transform: translate(-50%, -50%);
-	height: 90px;
+	height: fit-content;
 	width: 70vw;
 	overflow: hidden;
 	font-family: 'Manrope', sans-serif;
@@ -1632,6 +1671,10 @@ body {
 	letter-spacing: -3px;
 	color: rgb(255, 89, 100);
 	/* background-color: #0087ca; */
+	/* border-top: 20px solid #ffffff; */
+
+
+
 	
 }
 
@@ -1639,11 +1682,10 @@ body {
 	font-weight: 700;
 	overflow: hidden;
 	height: 90px;
-
-
 }
 
 .content__container__list {
+	z-index: 10;
 	margin-top: 0;
 	width: 70vw;
 	/* height: 500px; */
@@ -4569,9 +4611,7 @@ h3.slide-title {
   5. Footer
 -------------------------------------------------------------------------------*/
 
-.footer {
-	padding-bottom: 4rem;
-}
+
 
 .body-piling .footer {
 	padding-bottom: 0;
