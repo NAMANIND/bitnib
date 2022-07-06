@@ -557,7 +557,7 @@
 }
 
 .j:hover{
-	    background: linear-gradient(180deg,#fff8fa 100px ,#ffb3c3 100%);
+	    background: linear-gradient(180deg,#fff8fa 1px ,#ffb3c3 50% );
 		/* background:#d4e9f7; */
 	
 		/* border-image-source: linear-gradient(90deg,#ffffff,rgba(70, 65, 65, 0.43)); */
@@ -1086,7 +1086,7 @@ body {
 
 .heightp{
 	height: 115vh !important;
-	background-image: url("/images/process-bg.jpg") ;
+	background-image: url("images/process-bg.jpg") ;
 	background-size: cover;
 	background-repeat: no-repeat;
 	
