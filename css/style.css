@@ -1084,14 +1084,17 @@ body {
 	background:#5252603e;
 }
 
+
 .heightp{
 	height: 115vh !important;
-	background-image: url("../images/process-bg.jpg") ;
-	background-size: cover;
-	background-repeat: no-repeat;
 	
 }
 
+.bgimg{
+	background-image: url("../images/process-bg.jpg") ;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
 
 @media screen and (max-width:767px) {
 	#hide1{
