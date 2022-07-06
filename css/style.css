@@ -1086,7 +1086,7 @@ body {
 
 .heightp{
 	height: 115vh !important;
-	background-image: url("images/process-bg.jpg") ;
+	background-image: url("../images/process-bg.jpg") ;
 	background-size: cover;
 	background-repeat: no-repeat;
 	
