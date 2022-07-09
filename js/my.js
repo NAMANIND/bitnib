@@ -4,8 +4,8 @@ const dow = document.getElementById("sha");
 const ani1 = document.getElementById("hide");
 const ani2 = document.getElementById("nav-toggle-btn");
 const ani3 = document.getElementById("brand-name");
-const remo = document.getElementById("hide1");
-const remo2 = document.getElementById("hide2");
+const remo = document.getElementById("Industries-w");
+const remo2 = document.getElementById("Industries");
 
 
 
@@ -180,14 +180,14 @@ function clientdrop() {
 
     if (document.getElementById("rowc2").style.opacity === "1") {
         document.getElementById("rowc2").style.opacity = "0";
-        document.getElementById("k3c").style.height = "110vh";
-        document.getElementById("k3c2").style.height = "110vh";
+        document.getElementById("k3c").style.height = "100vh";
+        document.getElementById("k3c2").style.height = "100vh";
         document.getElementById("cldr").textContent = "View All Clients";
        
     } else {
         document.getElementById("rowc2").style.opacity = "1";
-        document.getElementById("k3c").style.height = "165vh";
-        document.getElementById("k3c2").style.height = "165vh";
+        document.getElementById("k3c").style.height = "140vh";
+        document.getElementById("k3c2").style.height = "140vh";
         document.getElementById("cldr").textContent = "View Less Clients"
     
         
