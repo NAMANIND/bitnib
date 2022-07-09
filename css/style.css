@@ -400,6 +400,7 @@ footer{
     display: flex;
 	left: 0;
     flex-wrap: wrap;
+	z-index: 400;
   
 	/* transform: rotate(90deg) ; */
 }
@@ -623,6 +624,7 @@ footer{
 	position: absolute;
 	top: 90px;
 	align-items: center;
+	z-index: 100;
 }
 
 .wid{
@@ -696,7 +698,7 @@ footer{
 	list-style: none;
 	width: 20px;
 	height: 20px;
-	opacity: 0.2;
+
 	/* background-color: rgba(255, 255, 255, 0.2); */
 	animation: animate 25s linear infinite;
 	bottom: -150px;
@@ -704,6 +706,8 @@ footer{
 	background-size: cover;
 	background-repeat: no-repeat;
 	/* filter: grayscale(100%); */
+	
+	
 	
 }
 
@@ -795,7 +799,7 @@ footer{
 @keyframes animate {
 	0% {
 		transform: translateY(0) rotate(0deg);
-		opacity: 1;
+		opacity: 0.8;
 		border-radius: 0;
 	}
 
