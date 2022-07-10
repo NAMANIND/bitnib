@@ -1787,8 +1787,10 @@ strong{
 }
 
 .design-item::before{
-	content:"▶";
-	padding-right: 1rem;
+	/* content:"▶"; */
+	content: url(../images/s-triangle-01.png);
+	
+	padding-right: 0.5rem;
 	color: #0055ff;
 }
 
