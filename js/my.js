@@ -140,7 +140,7 @@ $(document).scroll(function () {
 
 
     if ((scrollPos >= top2 && scrollPos < top3)) {
-        document.getElementById("sha").style.backgroundColor = "rgba(29,29,31,0.9)";
+        document.getElementById("sha").style.backgroundColor = "rgba(255, 255, 255, 0.1)";
         dow.classList.remove("sha-dow");
         document.getElementById("brimg").src = "images/brand-0-b.svg";
         // navi.forEach(element => {
@@ -160,7 +160,8 @@ $(document).scroll(function () {
 
     } else {
         dow.classList.add("sha-dow");
-        document.getElementById("sha").style.backgroundColor = "rgba(255,255,255,0.72)";
+        // document.getElementById("sha").style.backgroundColor = "rgba(255,255,255,0.72)";
+        document.getElementById("sha").style.backgroundColor = "rgba(0, 0, 0, 0.1)";
         document.getElementById("brimg").src = "images/brand-0.svg";
         for (let index = 0; index < navi.length; index++) {
             navi[index].classList.remove("navi");
@@ -180,14 +181,14 @@ function clientdrop() {
 
     if (document.getElementById("rowc2").style.opacity === "1") {
         document.getElementById("rowc2").style.opacity = "0";
-        document.getElementById("k3c").style.height = "100vh";
-        document.getElementById("k3c2").style.height = "100vh";
+        document.getElementById("k3c").style.height = "90vh";
+        document.getElementById("k3c2").style.height = "90vh";
         document.getElementById("cldr").textContent = "View All Clients";
        
     } else {
         document.getElementById("rowc2").style.opacity = "1";
-        document.getElementById("k3c").style.height = "140vh";
-        document.getElementById("k3c2").style.height = "140vh";
+        document.getElementById("k3c").style.height = "125vh";
+        document.getElementById("k3c2").style.height = "125vh";
         document.getElementById("cldr").textContent = "View Less Clients"
     
         
@@ -205,14 +206,14 @@ function clientdrop() {
 
 window.onscroll = function scrollfun() {
 
-    if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
         // dow.style.backgroundColor = "rgba(255,255,255,0.72)";
     } else {
         dow.style.backgroundColor = "#fff8fa";
     }
 
 
-    if (document.body.scrollTop > 750 || document.documentElement.scrollTop > 750) {
+    if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
         mybutton.style.opacity = "1";
         dow.classList.add("sha-dow");
         ani1.classList.add("ani1");
