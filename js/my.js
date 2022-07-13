@@ -206,7 +206,7 @@ function clientdrop() {
 
 window.onscroll = function scrollfun() {
 
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
         // dow.style.backgroundColor = "rgba(255,255,255,0.72)";
     } else {
         dow.style.backgroundColor = "#fff8fa";
@@ -219,6 +219,8 @@ window.onscroll = function scrollfun() {
         ani1.classList.add("ani1");
         ani2.classList.add("ani2");
         ani3.classList.add("ani3");
+        dow.style.height= "60px";
+        ani2.style.top= "0.9rem";
 
     } else {
         mybutton.style.opacity = "0";
@@ -226,6 +228,8 @@ window.onscroll = function scrollfun() {
         ani1.classList.remove("ani1");
         ani2.classList.remove("ani2");
         ani3.classList.remove("ani3");
+        dow.style.height= "99px";
+        ani2.style.top= "2rem";
 
     }
 
