@@ -141,7 +141,7 @@
     display: grid;
     grid-template-columns: 25% 20% 45%;
 	position: relative;
-	top: 300px;
+	top: 350px;
 	row-gap: 4rem;
 	height: fit-content;
 	left: 70px;
@@ -427,6 +427,7 @@ footer{
 #cldr{
 	transition: all 0.3s ease-in-out;
 }
+
 
 
 .rowc {
@@ -1473,7 +1474,7 @@ body {
 }	
 
 .height40{
-	height: 95vh !important;
+	height: 98vh !important;
 }
 .heightl{
 	height: 100vh !important;
@@ -1501,7 +1502,7 @@ body {
 }
 
 .wid-b {
-
+	
 	width: 100%;
 	height: 100vh;
 	position: relative;
@@ -2629,20 +2630,21 @@ img {
 .navbar {
 	top: 0 !important;
 	width: 100%;
-	height: 60px;
+	height: 99px ;
 	backdrop-filter: saturate(180%) blur(20px);
 	z-index: 600;
 	position: fixed;
 	padding-bottom: 40px;
+	transition: 0.3s ease-in-out;
 }
 
 .sha-dow {
 	box-shadow: 0 3px 50px 0 rgb(196 196 196 / 20%);
-	transition: .3s ease-in-out;
+	transition: 0.3s ease-in-out;
 }
 
 #sha{
-	transition: .3s ease-in-out;
+	transition: 0.3s ease-in-out;
 }
 
 nav {
@@ -3066,7 +3068,7 @@ label.error {
 
 @media (min-width: 768px) {
 	.nav-toggle-btn {
-		top: 1rem;
+		top: 2rem;
 	}
 }
 @media (max-width: 768px) {
