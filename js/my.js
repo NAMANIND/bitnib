@@ -206,31 +206,49 @@ function clientdrop() {
 
 window.onscroll = function scrollfun() {
 
-    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         // dow.style.backgroundColor = "rgba(255,255,255,0.72)";
+        dow.style.height= "60px";
+        ani2.style.top= "0.9rem";
+        dow.style.paddingBottom="40px";
+        
+   
+     
     } else {
         dow.style.backgroundColor = "#fff8fa";
+        dow.style.height= "99px";
+        ani2.style.top= "3.4rem";
+        dow.style.paddingBottom="0px";
+      
+      
+    }
+
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        // dow.style.backgroundColor = "rgba(255,255,255,0.72)";
+        // dow.style.height= "60px";
+        // ani2.style.top= "0.9rem";
+        // dow.style.paddingBottom="40px";
+        ani1.classList.add("ani1");
+        ani2.classList.add("ani2");
+        ani3.classList.add("ani3");
+    } else {
+        dow.style.backgroundColor = "#fff8fa";
+        // dow.style.height= "99px";
+        // ani2.style.top= "3.4rem";
+        // dow.style.paddingBottom="0px";
+        ani1.classList.remove("ani1");
+        ani2.classList.remove("ani2");
+        ani3.classList.remove("ani3");
     }
 
 
     if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
         mybutton.style.opacity = "1";
-        dow.classList.add("sha-dow");
-        ani1.classList.add("ani1");
-        ani2.classList.add("ani2");
-        ani3.classList.add("ani3");
-        dow.style.height= "60px";
-        ani2.style.top= "0.9rem";
+  
 
     } else {
         mybutton.style.opacity = "0";
         dow.classList.remove("sha-dow");
-        ani1.classList.remove("ani1");
-        ani2.classList.remove("ani2");
-        ani3.classList.remove("ani3");
-        dow.style.height= "99px";
-        ani2.style.top= "2rem";
-
     }
 
 
