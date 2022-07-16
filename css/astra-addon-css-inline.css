@@ -1,11 +1,11 @@
-
+/* 
 #content:before {
   content: "921";
   position: absolute;
   overflow: hidden;
   opacity: 0;
   visibility: hidden;
-}
+} */
 
 .single .ast-author-details .author-title {
   color: #0572bb;

@@ -211,6 +211,7 @@ window.onscroll = function scrollfun() {
         dow.style.height= "60px";
         ani2.style.top= "0.9rem";
         dow.style.paddingBottom="40px";
+      
         
    
      
@@ -228,6 +229,7 @@ window.onscroll = function scrollfun() {
         // dow.style.height= "60px";
         // ani2.style.top= "0.9rem";
         // dow.style.paddingBottom="40px";
+        dow.classList.add("axil-sticky");
         ani1.classList.add("ani1");
         ani2.classList.add("ani2");
         ani3.classList.add("ani3");
@@ -236,6 +238,7 @@ window.onscroll = function scrollfun() {
         // dow.style.height= "99px";
         // ani2.style.top= "3.4rem";
         // dow.style.paddingBottom="0px";
+        dow.classList.remove("axil-sticky");
         ani1.classList.remove("ani1");
         ani2.classList.remove("ani2");
         ani3.classList.remove("ani3");
