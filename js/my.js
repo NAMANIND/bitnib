@@ -7,7 +7,9 @@ const ani3 = document.getElementById("brand-name");
 const remo = document.getElementById("Industries-w");
 const remo2 = document.getElementById("Industries");
 
-
+if(window.scrollY ==0){
+    dow.style.backgroundColor = "#fff8fa"; 
+}
 
 
 $(function(){
@@ -206,39 +208,16 @@ function clientdrop() {
 
 window.onscroll = function scrollfun() {
 
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        // dow.style.backgroundColor = "rgba(255,255,255,0.72)";
-        dow.style.height= "60px";
-        ani2.style.top= "0.9rem";
-        dow.style.paddingBottom="40px";
-      
-        
-   
-     
-    } else {
-        dow.style.backgroundColor = "#fff8fa";
-        dow.style.height= "99px";
-        ani2.style.top= "3.4rem";
-        dow.style.paddingBottom="0px";
-      
-      
-    }
+
 
     if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-        // dow.style.backgroundColor = "rgba(255,255,255,0.72)";
-        // dow.style.height= "60px";
-        // ani2.style.top= "0.9rem";
-        // dow.style.paddingBottom="40px";
-        dow.classList.add("axil-sticky");
+        dow.style.backgroundColor = "rgba(255,255,255,0.1)";
+    
         ani1.classList.add("ani1");
         ani2.classList.add("ani2");
         ani3.classList.add("ani3");
     } else {
-        dow.style.backgroundColor = "#fff8fa";
-        // dow.style.height= "99px";
-        // ani2.style.top= "3.4rem";
-        // dow.style.paddingBottom="0px";
-        dow.classList.remove("axil-sticky");
+        dow.style.backgroundColor = "#fff8fa"; 
         ani1.classList.remove("ani1");
         ani2.classList.remove("ani2");
         ani3.classList.remove("ani3");
