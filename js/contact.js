@@ -9,7 +9,7 @@ const remo2 = document.getElementById("Industries");
 
 if(window.scrollY ==0){
  
-    dow.style.backgroundImage   = "linear-gradient(90deg,#ecf2f6,rgba(236,242,246,0) 70.31%)";
+    document.getElementById("sha").style.backgroundImage   = "linear-gradient(90deg,#ecf2f6,rgba(236,242,246,0) 70.31%)";
 }
 
 window.onscroll = function scrollfun() {

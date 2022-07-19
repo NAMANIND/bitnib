@@ -330,7 +330,7 @@ footer{
 
 
 #para{
-	width: 70%;
+	width: 80%;
 	height: 400px;
 	position: absolute;
 	bottom: 20px;
@@ -736,7 +736,7 @@ footer{
 .context .touch{
 	position: relative;
     top: -50px;
-	width: 200px;
+	width: 180px;
 	font-size: 16px;
 	font-weight: bold;
 	height: 60px;
@@ -3756,7 +3756,7 @@ html:not(.body-menu-opened) .hamburger:hover .bottom-bun {
 
 .shape6 {
 	top: 52.1% !important;
-	left: 54.0625% !important;
+	left: 64.0625% !important;
 	width: 6.25%;
 }
 
@@ -3767,7 +3767,7 @@ html:not(.body-menu-opened) .hamburger:hover .bottom-bun {
 
 .shape7 {
 	top: 51.2% !important;
-	left: 56.51041667% !important;
+	left: 66.51041667% !important;
 	width: 6.0625%;
 }
 
@@ -3789,7 +3789,7 @@ html:not(.body-menu-opened) .hamburger:hover .bottom-bun {
 
 .shape8 {
 	top: 47.9% !important;
-	left: 63.95833333% !important;
+	left: 73.95833333% !important;
 	width: 3.33333333%;
 }
 
@@ -3799,13 +3799,13 @@ html:not(.body-menu-opened) .hamburger:hover .bottom-bun {
 }
 
 .shape9 {
-	top: 52% !important;
-	left: 49.27083333% !important;
+	top: 0% !important;
+	left: 25.27083333% !important;
 	width: .78125%;
 }
 
 .shape9>.inside {
-	background-image:  url("../images/triangle-01.png");
+	/* background-image:  url("../images/triangle-01.png"); */
 	padding-bottom: 120%;
 }
 
@@ -3822,7 +3822,7 @@ html:not(.body-menu-opened) .hamburger:hover .bottom-bun {
 
 .shape10 {
 	top: 54.8% !important;
-	left: 69.89583333% !important;
+	left: 79.89583333% !important;
 	width: .98958333%;
 }
 
@@ -3865,7 +3865,7 @@ html:not(.body-menu-opened) .hamburger:hover .bottom-bun {
 }
 
 .shape12 {
-	top: 69.3% !important;
+	top: 79.3% !important;
 	left: 24.11458333% !important;
 	width: 1.45833333%;
 }
@@ -3916,7 +3916,7 @@ html:not(.body-menu-opened) .hamburger:hover .bottom-bun {
 
 .shape15 {
 	top: 38.6% !important;
-	left: 82.8125% !important;
+	left: 92.8125% !important;
 	width: .83333333%;
 }
 

@@ -148,13 +148,14 @@ textarea.form-control {
 }
 
 .axil-btn.btn-fill-primary {
-    border: 1px solid #5956e9;
+    border: 1px solid #0055ff;
  
     overflow: hidden;
 }
 
 .axil-btn.btn-borderd:hover, .axil-btn.btn-fill-primary {
-    background-color: #5956e9;
+	background-color:#0055ff;
+
 
     color: #fff;
 
