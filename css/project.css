@@ -59,9 +59,9 @@
 
 .proj-box{
     margin: 100px auto ;
-    height: 60vh;
-    width: 80%;
-    box-shadow: 0 20px 48px 0 rgb(153 161 170 / 25%);
+    height: 70vh;
+    width: 75%;
+    /* box-shadow: 0 20px 48px 0 rgb(153 161 170 / 25%); */
     padding: 10px;
     background-color: #fff;
     

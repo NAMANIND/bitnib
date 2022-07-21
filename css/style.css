@@ -457,7 +457,7 @@ footer{
 }
 
 #k3c2{
-	background-color: #000000;
+	background-color: #000000 !important;
 	color: #FF5964;
 	height: 90vh ;
 	transition: all 0.3s ease-in-out;
