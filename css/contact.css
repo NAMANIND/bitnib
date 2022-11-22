@@ -1,19 +1,38 @@
 .contant-container{
-    float: left;
+    /* align-items: center; */
 	width: 100%;
 	height: 100vh;
 	position: relative;
 	flex-grow: 1;
 	display: flex;
+    justify-content: center;
+}
+
+
+.contant-container-c{
+    float: left;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    flex-grow: 1;
+      flex-direction: column;
+    display: flex;
+      /* margin-top: 100px; */
+      padding-right: 180px;
+      padding-top: 100px;
+      /* background-color: aqua; */
+      align-items: center;
+      justify-content: center;
 }
 
 .cont-1{
-    height: 50vh;
+    height: 50vh !important;
     background: linear-gradient(90deg,#ecf2f6,rgba(236,242,246,0) 70.31%);
+    
 }
 
 .cont-2{
-    height: 100vh;
+    height: 110vh;
     /* background: linear-gradient(90deg,#ecf2f6,rgba(236,242,246,0) 70.31%); */
     background-image: url(../images/line-6.png);
     background-repeat: no-repeat;
@@ -21,45 +40,117 @@
     background-position-y: center ;
 }
 .cont-3{
-    height: 40vh;
+    height: 50vh;
     background-color: #e6f1ff;
     
     
 }
 
-
+.zp{
+    z-index: 20 !important;
+}
 
 .cont-text1{
-    position: absolute;
-	font-family: 'manrope', sans-serif;
-	left: 150px;
-	top: 15%;
-	width: 55vw;
-	font-size: 65px;
-	line-height: 75px;
-	font-weight: 800;
-    z-index: 100;
+     /* position: absolute; */
+     font-family: 'manrope', sans-serif;
+     /* left: 250px;
+     top: 15%; */
+     width: 55vw;
+     font-size: 65px;
+     line-height: 76px;
+     font-weight: 800;
+     z-index: 100;
+     color: #000;
+     margin-top: 0;
+     margin-bottom: 160px;
 }
 
 .line-4{
-    position: relative;
-    top: 50px;
+    position: absolute;
+    top: 25%;
+    left: 0px;
+    display: inline-block;
+    z-index: 0;
+}
+
+.circle-4{
+    position: absolute;
+    top: 20%;
+    left: 4%;
+    width:250px;
+    height: 250px;
+    display: inline-block;
+    z-index: 0;
+    rotate: 45deg;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    opacity: 0.4;
+    transition: all .3s ease-in-out;
+	cursor: pointer;
+
+}
+
+@media (min-width: 1600px){
+    .circle-4{
+        left: 6% !important;
+    }
+}
+
+.circle-4:hover{
+    filter: grayscale(0%);
+    opacity: 1;
+    rotate: 0deg;
 }
 
 .box-grid{
-    display: grid;
-    grid-template-columns: 50% 50%;
+    display: flex;
+    flex-direction: row;
+    /* grid-template-columns: 50% 50%; */
 	position: relative;
-    width: 100%;
+width: 80%;
 	height: fit-content;
     
 
 
 }
 
+#cont-so{
+    width: 300px;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#cont-so span{
+    color: #fff !important;
+    font-family: 'manrope', sans-serif;
+	line-height: 28px !important;
+	font-size: 21px !important;
+	font-weight: 400 !important;
+    opacity: 0.7;
+}
+
+#cont-so span:hover{
+    opacity: 1;
+}
+
+#cont-so i{
+    color: #Ff5964 !important;
+    opacity: 1 !important;
+    
+}
+#cont-so li{
+    margin: 5px 0;
+    opacity: 1;
+}
+
+#cont-so i:before {
+
+    font-size: 24px;
+}
+
 .form-box{
     margin: 100px auto 0;
-    height: 90vh;
+    height: max-content;
     width: 500px;
     box-shadow: 0 20px 48px 0 rgb(153 161 170 / 25%);
     padding: 50px;
@@ -183,9 +274,9 @@ textarea.form-control {
 }
 .contact-box1{
     width: 500px;
-    height: 40vh;
+    height: max-content;
     margin-bottom: 10vh;
-    background-color: #27272e;
+    background-color: #000;
     border-radius: 14px;
     padding: 60px 50px;
     box-shadow: 0 9px 18px 0 rgb(0 0 0 / 25%);
@@ -210,3 +301,142 @@ textarea.form-control {
     top: 80px;
 }
 
+.temp2{
+    transform: scaleX(1.001);
+	transform-origin: bottom left;
+
+}
+
+.temp2:after {
+	transform: scaleX(1.001);
+}
+
+
+
+@media screen and (max-width:767px) {
+
+
+    #cont-so span{
+        color: #fff !important;
+        font-family: 'manrope', sans-serif;
+        line-height: 28px !important;
+        font-size: 16px !important;
+        font-weight: 400 !important;
+    }
+
+    #cont-so{
+        width: 100% !important;
+    }
+    .cont-1{
+        height: 20vh !important;
+        background: linear-gradient(90deg,#ecf2f6,rgba(236,242,246,0) 70.31%);
+    }
+
+
+    .cont-2{
+        height: max-content !important;
+        /* background: linear-gradient(90deg,#ecf2f6,rgba(236,242,246,0) 70.31%); */
+        background-image: url(../images/line-6.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position-y: center ;
+    }
+
+    .cont-text1{
+        /* position: absolute;
+        font-family: 'manrope', sans-serif;
+        left:30px !important;
+        top: 15%; */
+        /* width: 90vw; */
+        font-size: 32px !important  ;
+        line-height: 38px !important;
+        font-weight: 800 !important;
+        z-index: 100;
+        letter-spacing: normal !important;
+        
+    }
+
+    .box-grid{
+        display: flex;
+        /* grid-template-columns: 100% !important; */
+        flex-direction: column;
+        position: relative;
+        width: 100% !important;
+        height: fit-content;
+    
+    
+    }
+
+    .contant-container-c{
+      
+          /* margin-top: 100px; */
+          padding-right: 75px;
+          padding-top: 160px;
+          /* background-color: aqua; */
+          align-items: center;
+          justify-content: center;
+    }
+
+    .line-4{
+        position: absolute;
+        top: 20%;
+        left: 0px;
+        width: 100%;
+        display: inline-block;
+        z-index: 0;
+    }
+
+
+    .form-box2{
+        width: 80% !important;
+    }
+    .form-box{
+        margin: 50px auto 0 !important;
+        height: max-content;
+        width: 80% !important;
+        box-shadow: 0 20px 48px 0 rgb(153 161 170 / 25%);
+        padding: 20px;
+        border-radius: 30px;
+        background-color: #fff;
+    }
+
+    .contact-box1{
+        margin: 50px auto 0 !important;
+        width: 100% !important;
+        height: max-content;
+        margin-bottom: 10vh;
+   
+        border-radius: 14px;
+        padding: 15px 20px;
+        box-shadow: 0 9px 18px 0 rgb(0 0 0 / 25%);
+        color: #fff;
+    }
+
+
+    .title-form{
+        font-family: 'manrope', sans-serif;
+        line-height: 46px;
+        font-size: 36px;
+        font-weight: 700;
+        letter-spacing: -3px;
+    }
+    .co-footer{
+        height: 740px;
+    }
+    .form-box2{
+        margin: 30px auto 0 !important;
+    }
+
+    .circle-4{
+        position: absolute;
+        top: 20%;
+        left: 5%;
+        width:200px;
+        height: 200px;
+    
+    
+    }
+
+
+
+}    

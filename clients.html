@@ -17,11 +17,14 @@
     <script src='js/jquery.min.js' id='jquery-core-js'></script>
     <!-- Main CSS -->
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/project.css" rel="stylesheet">
     <link href="css/contact.css" rel="stylesheet">
+    <link href="css/clients.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 
-   
+
     <title>Bitnib</title>
 
 
@@ -49,7 +52,7 @@
 </head>
 
 <body>
-    <div id="header-2">
+    <div id="header-4">
         <article>
         </article>
     </div>
@@ -83,7 +86,12 @@
         
       </div>
       <div class=" offcanvas-backdrop fadesh a-nav-toggle" id="lop" onclick="lockScroll()"></div>
-    <header class="ani10" id="sha">
+    <header class="ani10 cdt" id="sha">
+      <script>
+        if (window.scrollY == 0) {
+          document.getElementById("sha").style.backgroundColor = "#cdd2d6";
+        }
+      </script>
      
       <div class="container-fluid" id="yest">
         
@@ -132,72 +140,133 @@
     </header>
         <div onclick="topfunction()" id="scroll-top" class=" js-page-scroll-top"><img src="images/logo-up.svg"
                 class="lazyloaded" alt="pg-scroll"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
         <div class="row">
-            <div class="contant-container-c cont-1">
+            <div class="proj-container proj-1  cli-1" style="padding-top: 55px;"> 
               <div class="zp">
-                <h1 class="cont-text1" style="letter-spacing: -3px;">Contact</h1>
-              </div>              
+                <h1 class="proj-text" style="letter-spacing: -3px;" >Clients</h1>
+              </div>
+               <div class="zp">
+                <p class="proj-para" >Our diverse work portfolio of clients
+                  ranges from startups to SMBs to well-known brands.
+                  We’ve built solutions for...</p>
+               </div>
             </div>
-            <img class="line-4" src="images/line-4.png">
+              <img class="circle-4" src="images/client-br.svg">
         </div>
+
+
+
+
+
         <div class="row">
-            <div class="contant-container cont-2">
-                <div class="box-grid">
-                    <div class="form-box">
-                        <h2 class="title-form">Let's work together.</h2>
-                        <form class="axil-contact-form" action="https://formsubmit.co/ayush@bitnibdesign.com" method=”POST”>
-                            <div class="form-group"><label>Name</label><input type="text" class="form-control"
-                                    name="contact-name" required=""></div>
-                            <div class="form-group"><label>Email</label><input type="email" class="form-control"
-                                    name="contact-email" required=""></div>
-                            <div class="form-group"><label>Phone</label><input type="tel" class="form-control"
-                                    name="contact-phone" required=""></div>
-                            <div class="form-group mb--40"><label>How can we help you?</label><textarea
-                                    class="form-control" name="contact-message" rows="4"></textarea></div>
-                            <div class="form-group"><button type="submit"
-                                    class="axil-btn btn-fill-primary btn-fluid btn-primary" name="submit-btn" >Send &nbsp;&nbsp;Enquiry</button></div>
-                            <div class="form-group"></div>
-                        </form>
+            <div class="client-box">
+
+                <div class="rowc" id="rowcn">
+                    <div class="col-lg-3 col-6">
+                        <div class="brand-grid"><img src="images/1-01.png" alt="Brand"></div>
                     </div>
-                    <div class="form-box2">
-                        <div class="contact-box1">
-                        
-                                <h4 class="title">Reach us at</h4>
-                                <ul class="footer-social" id="cont-so">
-                                  <li> <a href="ayush@bitnibdesign.com">
-                                    <i class="fa-solid fa-envelope icon-dark"></i>
-                                    <span>ayush@bitnibdesign.com</span>
-                                  </a>
-                                </li>
-                                 <li>
-                                  <a href="+971 50 276 4363">
-                                    <i class="fa-solid fa-phone icon-dark"></i>
-                                    <span>+971 50 276 4363</span>
-                                  </a>
-                                 </li>
-                                  <li>
-                                    <a href="https://www.google.co.in/maps/place/Dubai+-+United+Arab+Emirates/@25.0757595,54.9472954,10z/data=!3m1!4b1!4m15!1m8!3m7!1s0x3e5f43496ad9c645:0xbde66e5084295162!2sDubai+-+United+Arab+Emirates!3b1!8m2!3d25.2048493!4d55.2707828!16zL20vMDFmMDhy!3m5!1s0x3e5f43496ad9c645:0xbde66e5084295162!8m2!3d25.2048493!4d55.2707828!16zL20vMDFmMDhy?hl=en">
-                                      <i class="fa-solid fa-location-dot icon-dark"></i>
-                                     
-                                      <span>&nbsp;Dubai, UAE</span>
-                                    </a>
-                                  </li>
-                                </ul>
-                         
-                        </div>
-                        <!-- <div class="contact-box1">
-                            <h4 class="title">Email</h4>
-                            <p>Our customer care is open from Mon-Fri, 10:00 am to 6:00 pm</p>
-                            <h4 class="phone-number"><a href="tel:1234567890"></a></h4>
-                        </div> -->
+                    <div class="col-lg-3 col-6">
+                        <div class="brand-grid"><img style="width: 80%; padding: 10% 0; margin: 0 10%;"
+                                src="images/kam air-01.png" alt="Brand"></div>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <div class="brand-grid"><img src="images/2-01.png" alt="Brand"></div>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <div class="brand-grid"><img src="images/3-01.png" alt="Brand"></div>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <div class="brand-grid"><img src="images/4-01.png" alt="Brand"></div>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <div class="brand-grid"><img src="images/intero black.png" alt="Brand"></div>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <div class="brand-grid"><img src="images/6-01.png" alt="Brand"></div>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <div class="brand-grid"><img src="images/7-01.png" alt="Brand"></div>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <div class="brand-grid"><img src="images/8-01.png" alt="Brand"></div>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <div class="brand-grid"><img src="images/9-01.png" alt="Brand"></div>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <div class="brand-grid"><img src="images/10-01.png" alt="Brand"></div>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <div class="brand-grid"><img src="images/vaw world black.png" alt="Brand"></div>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <div class="brand-grid"><img src="images/12-01.png" alt="Brand"></div>
+                      </div>
+                      <div class="col-lg-3 col-6">
+                        <div class="brand-grid"><img src="images/13-01.png" alt="Brand"></div>
+                      </div>
+                      <div class="col-lg-3 col-6">
+                        <div class="brand-grid"><img src="images/14-01.png" alt="Brand"></div>
+                      </div>
+                      <div class="col-lg-3 col-6">
+                        <div class="brand-grid"><img src="images/15-01.png" alt="Brand"></div>
+                      </div>
+                      <div class="col-lg-3 col-6" style="margin: 0px ;">
+                        <div class="brand-grid"><img src="images/16-01.png" alt="Brand"></div>
+                      </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <div class="row" id="Contact">
+            <div class="wid-b-n">
+                <div class="wid">
+                    <div class="context">
+                        <h2>Let's Work Together</h2>
+                        <h1>Make your idea a reality.</h1>
+                        <h1><button class="touch" onclick="location.href='./contact'">Get in touch</button> </h1>
+                    </div>
+                    <div class="area">
+                        <ul class="circles">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class=" cont-3">
-                
-      <footer class="co-footer">
+               
+      <footer class="cl-footer">
         <div class="footer">
           <div>
             <img width="81%" src="images/brand-0.svg">
@@ -256,20 +325,15 @@
       </footer>
             </div>
         </div>
-       
 
         <script>
-            if(window.scrollY ==0){
-     
-     document.getElementById("sha").style.backgroundImage   = "linear-gradient(90deg,#ecf2f6,rgba(236,242,246,0) 70.31%)";
-    }
+            if (window.scrollY == 0) {
+
+                document.getElementById("sha").style.backgroundImage = "linear-gradient(90deg,#ecf2f6,rgba(236,242,246,0) 70.31%)";
+            }
         </script>
-         <script src="./js/contact.js" async></script>
-          <script src="js/script.js"></script>
-          
-
+        <script src="./js/clients.js" async></script>
+        <script src="js/script.js"></script>
 </body>
-
-  
 
 </html>

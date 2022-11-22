@@ -8,17 +8,6 @@ const remo2 = document.getElementById("Industries");
 
 
 
-function lockScroll() {
-   
-    if ($('body').hasClass('lock-scroll')) {
-        document.getElementById("lop").style.display="none";
-        $('body').removeClass('lock-scroll');
-    } else {
-        document.getElementById("lop").style.display="block";
-        $('body').addClass('lock-scroll');
-    }
-}
-
 
 window.onload = function() {
     var href = document.location.href;
@@ -60,7 +49,6 @@ window.onscroll = function scrollfun() {
 
 
 
-
     if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
         mybutton.style.opacity = "1";
   
@@ -78,14 +66,34 @@ function topfunction() {
 
 
 
-function processfunction() {
-    if(window.innerWidth < 800){
-        window.location= "/#Process-w";
-    }else{
-      window.location= "/#Process";
+function lockScroll() {
+   
+    if ($('body').hasClass('lock-scroll')) {
+        document.getElementById("lop").style.display="none";
+        $('body').removeClass('lock-scroll');
+    } else {
+        document.getElementById("lop").style.display="block";
+        $('body').addClass('lock-scroll');
     }
-    
-    window.scrollTo({ top: $("#Process").offset().top, behavior: "smooth" });
 }
 
 
+
+
+
+    var burg = document.getElementsByClassName("burg");
+    // document.getElementById("sha").style.backgroundColor = "rgba(255, 255, 255, 0.1)";
+    dow.classList.remove("sha-dow");
+    document.getElementById("brimg").src = "images/brand-0.svg";
+
+
+    function processfunction() {
+        if(window.innerWidth < 800){
+            window.location= "/#Process-w";
+        }else{
+          window.location= "/#Process";
+        }
+        
+        window.scrollTo({ top: $("#Process").offset().top, behavior: "smooth" });
+    }
+    

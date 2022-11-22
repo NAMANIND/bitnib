@@ -7,8 +7,33 @@ const ani3 = document.getElementById("brand-name");
 const remo = document.getElementById("Industries-w");
 const remo2 = document.getElementById("Industries");
 
+window.onload = function() {
+    var href = document.location.href;
+    var str= href.substring(href.lastIndexOf('/') + 1);
+    if(str == "contact"){
+        document.getElementById(str).classList.add("temp2"); 
+    }else{
+        document.getElementById(str).classList.add("temp"); 
+    }  
+}
+
+
+function lockScroll() {
+   
+    if ($('body').hasClass('lock-scroll')) {
+        document.getElementById("lop").style.display="none";
+        $('body').removeClass('lock-scroll');
+    } else {
+        document.getElementById("lop").style.display="block";
+        $('body').addClass('lock-scroll');
+    }
+}
+
+
+
+
 if(window.scrollY ==0){
-    dow.style.backgroundColor = "#fff8fa"; 
+    document.getElementById("sha").style.backgroundColor = "#fff8fa"; 
 }
 
 
@@ -128,7 +153,6 @@ function updateView(oLayer)
 
 
 
-
 $(document).scroll(function () {
 
 
@@ -172,28 +196,26 @@ $(document).scroll(function () {
             burg[index].style.backgroundColor = "black";
         }
     }
-
-
-
 });
 
 
 
 function clientdrop() {
+    var clihi = document.getElementsByClassName("clihi");
 
-    if (document.getElementById("rowc2").style.opacity === "1") {
-        document.getElementById("rowc2").style.opacity = "0";
-        document.getElementById("k3c").style.height = "90vh";
-        document.getElementById("k3c2").style.height = "90vh";
+  
+
+    if ( clihi[0].classList.contains("cg")) {
+        for (let index = 0; index < clihi.length; index++) {
+            clihi[index].classList.remove("cg");
+        }
         document.getElementById("cldr").textContent = "View All Clients";
        
     } else {
-        document.getElementById("rowc2").style.opacity = "1";
-        document.getElementById("k3c").style.height = "125vh";
-        document.getElementById("k3c2").style.height = "125vh";
-        document.getElementById("cldr").textContent = "View Less Clients"
-    
-        
+        for (let index = 0; index < clihi.length; index++) {
+            clihi[index].classList.add("cg");
+        }
+        document.getElementById("cldr").textContent = "View Less Clients";   
     }
 
 }
@@ -205,7 +227,7 @@ function clientdrop() {
 
 
 
-
+const ani4 = document.getElementById("yest");
 window.onscroll = function scrollfun() {
 
 
@@ -216,11 +238,13 @@ window.onscroll = function scrollfun() {
         ani1.classList.add("ani1");
         ani2.classList.add("ani2");
         ani3.classList.add("ani3");
+        ani4.classList.add("ani4");
     } else {
         dow.style.backgroundColor = "#fff8fa"; 
         ani1.classList.remove("ani1");
         ani2.classList.remove("ani2");
         ani3.classList.remove("ani3");
+        ani4.classList.remove("ani4");
     }
 
 
@@ -232,44 +256,6 @@ window.onscroll = function scrollfun() {
         mybutton.style.opacity = "0";
         dow.classList.remove("sha-dow");
     }
-
-
-
-
-
-
-
-
-
-    // var io = new IntersectionObserver(entries => {
-    //     for (const entry of entries){
-    //         if (window.innerWidth > 1024)  {
-    //             if ((entry.isIntersecting)) {
-    //                 document.getElementById("sha").style.backgroundColor = "rgba(29,29,31,0.9)";
-    //                 dow.classList.remove("sha-dow");
-
-    //             } else if((!entry.isIntersecting)) {
-    //                 dow.classList.add("sha-dow");
-    //                 document.getElementById("sha").style.backgroundColor = "rgba(255,255,255,0.72)";
-    //             }
-
-    //         } else if (window.innerWidth < 700) {
-    //             if ((entries[0].intersectionRatio>0.6)) {
-    //                 document.getElementById("sha").style.backgroundColor = "rgba(29,29,31,0.9)";
-    //                 dow.classList.remove("sha-dow");
-    //             } else if((!entry.isIntersecting) || (entries[0].intersectionRatio<0.8)) {
-    //                 dow.classList.add("sha-dow");
-    //                 document.getElementById("sha").style.backgroundColor = "rgba(255,255,255,0.72)";
-    //             }
-
-    //         }
-
-    //     }
-
-    //     // console.log(`$(entry.target.id) is in view: ${entry.isIntersecting}`);
-    //     // console.log(entries[0].intersectionRatio);
-    // })
-    // io.observe(document.querySelector("#Clients"));
 
 }
 
@@ -319,6 +305,21 @@ function topfunction() {
     // document.documentElement.scrollTop = 0,'smooth';
     window.scrollTo({ top: 0, behavior: "smooth" });
 }
+
+function processfunction() {
+    // document.body.scrollTop = 0,'smooth';
+    // document.documentElement.scrollTop = 0,'smooth';
+    if(window.innerWidth < 800){
+        window.scrollTo({ top: $("#Process-w").offset().top, behavior: "smooth" }); 
+    }else{
+        window.scrollTo({ top: $("#Process").offset().top, behavior: "smooth" });
+    }
+
+   
+    // window.scrollTo({ top: $("#Process-w").offset().top, behavior: "smooth" });
+}
+
+
 
 
 //  if (
